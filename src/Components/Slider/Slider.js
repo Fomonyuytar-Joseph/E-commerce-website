@@ -15,12 +15,28 @@ function Slider() {
   <div class="carousel-inner">
     <div class="carousel-item active">
 <img src={im1} style={ {height: "550px" } }  class="d-block w-100 " alt="..."/>
+    
+<div class="carousel-caption d-none d-md-block">
+        <h1>Get your products here</h1>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div>
+
     </div>
     <div class="carousel-item">
+    <div class="carousel-caption d-none d-md-block">
+        <h5>First slide label</h5>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div>
+
+        
       <img src={im2} style={ {height: "550px" } }  class="d-block w-100" alt="..."/>
     </div>
     <div class="carousel-item">
       <img src={im3} style={ {height: "550px" } }  class="d-block w-100" alt="..."/>
+      <div class="carousel-caption d-none d-md-block">
+        <h5>First slide label</h5>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div>
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">

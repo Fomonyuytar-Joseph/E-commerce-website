@@ -38,8 +38,9 @@ function Slider() {
     <div class="carousel-item">
       <img src={im3} style={ {height: "550px" } }  class="d-block w-100" alt="..."/>
       <div class="carousel-caption d-none d-md-block">
-      <h1>Get %0% discunt for all products</h1>
-        <p>Get the best deals available</p>
+      <h1>Get the latest for all products</h1>
+      <button className='advert-btn'> Shop Now
+</button>
       </div>
     </div>
   </div>

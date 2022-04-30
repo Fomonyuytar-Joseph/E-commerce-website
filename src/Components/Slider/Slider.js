@@ -5,7 +5,7 @@ import im2 from './images/im2.jpg'
 import im3 from './images/im3.jpg'
 
 function Slider() {
-  const [advert ,setAdvert]=useState()
+  const [advert ,setAdvert]=useState([])
   return (
     <div>
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">

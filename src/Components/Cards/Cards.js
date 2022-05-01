@@ -1,22 +1,22 @@
 import React from 'react'
-import plane from './images/plane.jpg'
+import shoe from './images/shoe.jpg'
 import controller from './images/controller.jpeg'
-import phone from './images/iphone.jpg'
-import gucci from './images/gucci.jpg'
+import phone from './images/iphone12.jpg'
+import sweater from './images/sweater.jpg'
 import { useState } from 'react'
 
 function Cards() {
 
   const [ products , setProducts ]  = useState(
-   [ { title:'Get your Toys' , image:plane ,id:1 },
+   [ { title:'Get your Toys' , image:shoe ,id:1 },
     { title:'Game Accessories' , image:controller , id:2  },
     { title:'Latest Iphones' , image:phone ,id:3 },
-    { title:'Dresses' , image:gucci ,id:4 }
+    { title:'Dresses' , image:sweater ,id:4 }
   ]
   )
   
   return (
-    <div>
+    <div class="d-flex justify-content-between">
      {products.map( (product) =>(
        <div class="card" style={{width: "18rem"}}  key={product.id} >
   

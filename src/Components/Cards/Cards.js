@@ -10,13 +10,13 @@ function Cards() {
   const [ products , setProducts ]  = useState(
    [ { title:'Get your Toys' , image:shoe ,id:1 },
     { title:'Game Accessories' , image:controller , id:2  },
-    { title:'Latest Iphones' , image:phone ,id:3 },
+    { title:'Latest iphones' , image:phone ,id:3 },
     { title:'Dresses' , image:sweater ,id:4 }
   ]
   )
   
   return (
-    <div class="d-flex justify-content-between">
+    <div class="d-flex justify-content-around flex-wrap " style={{marginTop:'-120px'}}>
      {products.map( (product) =>(
        <div class="card" style={{width: "18rem"}}  key={product.id} >
   

@@ -1,6 +1,7 @@
 import Navbar from './Components/Navbar/Navbar'
 import Slider from './Components/Slider/Slider'
 import Cards from './Components/Cards/Cards';
+import Footer from './Components/Footer/Footer';
 
 
 
@@ -13,6 +14,7 @@ function App() {
     <Navbar></Navbar>
     <Slider/>
     <Cards/>
+    <Footer/>
     
 
 

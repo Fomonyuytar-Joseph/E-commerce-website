@@ -8,10 +8,10 @@ import { useState } from 'react'
 function Cards() {
 
   const [ products , setProducts ]  = useState(
-   [ { title:'Get your Toys' , image:shoe ,id:1 },
+   [ { title:'Get your Shoes' , image:shoe ,id:1 },
     { title:'Game Accessories' , image:controller , id:2  },
     { title:'Latest iphones' , image:phone ,id:3 },
-    { title:'Dresses' , image:sweater ,id:4 }
+    { title:'pullover' , image:sweater ,id:4 }
   ]
   )
   
@@ -29,6 +29,7 @@ function Cards() {
        </div>
      </div>
      ))}
+     
     </div>
   )
 }

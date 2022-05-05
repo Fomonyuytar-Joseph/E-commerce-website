@@ -10,6 +10,8 @@ import school from './images/school.jpg'
 import strange from './images/blue.jpg'
 // import gucci from './images/game.jpg'
 import { useState } from 'react'
+import ReactDOM from 'react-dom';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 function Cards() {
 

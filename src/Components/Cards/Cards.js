@@ -17,7 +17,7 @@ import { Link } from 'react-router-dom';
 function Cards() {
 
   const [ products , setProducts ]  = useState(
-   [ { title:'Get your Shoes' , image:shoe , productLink:'/shoes',id:1 },
+   [ { title:'Get your Shoes' , image:shoe , productLink:"/shoes",id:1 },
     { title:'Game Accessories' , image:controller , productLink:'/games', id:2  },
     { title:'Latest iphones' , image:phone , productLink:'/phones',id:3 },
     { title:'pullover' , image:sweater , productLink:'/pullover',id:4 },
@@ -40,10 +40,11 @@ function Cards() {
          <img src={product.image} class="card-img-bottom" alt="..."/>
          <p class="card-text"></p>
          
-
-         <button type="button" class="btn btn-primary">Buy Now</button>
+          <Link to={product.productLink}>
+          <button type="button" class="btn btn-primary">Buy Now</button>
+        
          
-         
+         </Link>   
          
        </div>
      </div>

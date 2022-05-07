@@ -1,8 +1,16 @@
 import React from 'react'
 import phone from './images/iphone12.jpg'
 import './phone.css'
+import { useState } from 'react'
 
 function Phone() {
+  const [items, setItems] = useState(
+    {
+      title:"iphone" , 
+    }
+  )
+  
+      
   return (
     <>
         <div class="card mb-3" style={{maxWidth: "430px"}}>

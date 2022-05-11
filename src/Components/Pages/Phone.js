@@ -1,19 +1,27 @@
 import React from 'react'
 import phone from './images/iphone12.jpg'
+import n20 from './phoneImages/note20.jpeg'
+import i8 from './phoneImages/iphone8.jpg'
+import pixel from './phoneImages/pixel4.jpg'
+import oneplus from './phoneImages/oneplus9.png'
+import s21ultra from './phoneImages/s21ultra.jpg'
+import p50 from './phoneImages/Huawei-P50-Pro.jpg'
+import ix from './phoneImages/iphonex.jpg'
+import vivo from './phoneImages/vivo.jpg'
 import './phone.css'
 import { useState } from 'react'
 
 function Phone() {
   const [items, setItems] = useState(
-  [  { image:phone ,title:"iphone" ,  price:"900000 FCFA" ,id:1} ,
-    { image:phone ,title:"iphone" ,  price:"900000 FCFA",id:2 },
-    { image:phone ,title:"iphone" ,  price:"900000 FCFA",id:3 },
-    { image:phone ,title:"iphone" ,  price:"900000 FCFA" ,id:4},
-    { image:phone ,title:"iphone" ,  price:"900000 FCFA" ,id:5},
-    { image:phone ,title:"iphone" ,  price:"900000 FCFA",id:6},
-    { image:phone ,title:"iphone" ,  price:"900000 FCFA" ,id:7},
-    { image:phone ,title:"iphone" ,  price:"900000 FCFA",id:8},
-    { image:phone ,title:"iphone" ,  price:"900000 FCFA" ,id:9}
+  [  { image:phone ,title:"iphone 13 pro Max" ,  price:"900000 FCFA" ,id:1} ,
+    { image:n20 ,title:"Note 20 Ultra" ,  price:"900000 FCFA",id:2 },
+    { image:i8 ,title:"iphone" ,  price:"900000 FCFA",id:3 },
+    { image:pixel ,title:"iphone" ,  price:"900000 FCFA" ,id:4},
+    { image:s21ultra ,title:"iphone" ,  price:"900000 FCFA" ,id:5},
+    { image:oneplus ,title:"iphone" ,  price:"900000 FCFA",id:6},
+    { image:p50 ,title:"iphone" ,  price:"900000 FCFA" ,id:7},
+    { image:ix ,title:"iphone" ,  price:"900000 FCFA",id:8},
+    { image:vivo ,title:"iphone" ,  price:"900000 FCFA" ,id:9}
   ]
   )
   

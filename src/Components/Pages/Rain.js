@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 
+
 function Rain() {
     const [items, setItems] = useState(
         [  { image:point ,title:"Regular Shoe " ,  price:"900,000 FCFA" ,id:1} ,

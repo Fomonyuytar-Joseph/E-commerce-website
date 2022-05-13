@@ -5,6 +5,7 @@ import Footer from './Components/Footer/Footer';
 import { BrowserRouter as Router ,Switch,  Route } from 'react-router-dom';
 import Shoes from './Components/Pages/Shoes';
 import Phone from './Components/Pages/Phone';
+import Rain from './Components/Pages/Rain';
 
 
 
@@ -32,6 +33,10 @@ function App() {
          </Route>
          <Route path='/phones'>
            <Phone/>
+
+         </Route>
+         <Route path='/rain'>
+           <Rain/>
 
          </Route>
 

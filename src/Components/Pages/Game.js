@@ -1,33 +1,33 @@
 import React from 'react'
 import { useState } from 'react'
-import blanket from './rainImages/blanket.jpg'
-import blanket2 from './rainImages/blanket2.jpg'
-import boot from './rainImages/boot.jpg'
-import boot2 from './rainImages/boot2.jpg'
-import sweater from './rainImages/sweater.jpg'
-import sweater2 from './rainImages/sweater2.jpg'
-import sweater3 from './rainImages/sweater.jpg'
-import umb from './rainImages/umb.jpg'
-import umb2 from './rainImages/umb2.jpg'
-import umb3 from './rainImages/umb3.jpg'
-import umb4 from './rainImages/umb4.png'
-import swt from './rainImages/wsweater.jpg'
+import ps5 from './game/ps5.jpg'
+import xbox from './game/xbox.jpg'
+import xc from './game/controller.jpg'
+import pc from './game/ps5controller.png'
+import gear from './game/gear.jpg'
+import ps4 from './game/ps4.jpg'
+import nintendo from './game/nintendo.jpg'
+import gh from './game/gh.webp'
+import gh2 from './game/gh2.jpg'
+import cd from './game/cd.jpg'
+import gc from './game/gc.jpg'
+import gta from './game/gta.jpg'
 
-
-function Rain() {
+function Game() {
     const [items, setItems] = useState(
-        [  { image:blanket ,title:"blanket " ,  price:"900,000 FCFA" ,id:1} ,
-          { image:blanket2,title:"Note 20 Ultra" ,  price:"500,000 FCFA",id:2 },
-          { image:boot ,title:"iphone 8" ,  price:"90,000 FCFA",id:3 },
-          { image:boot2 ,title:"Pixel 4a" ,  price:"200,000 FCFA" ,id:4},
-          { image:sweater ,title:"Samsung S21 Ultra" ,  price:"700,000 FCFA" ,id:5},
-          { image:sweater2 ,title:"Oneplus 8" ,  price:"300,000 FCFA",id:6},
-          { image:sweater3 ,title:"Huawei P50 Pro" ,  price:"950,000 FCFA" ,id:7},
-          { image:umb ,title:"iphone X" ,  price:"200,000 FCFA",id:8},
-          { image:umb2 ,title:"vivo x7 Pro" ,  price:"300,000 FCFA" ,id:9},
-          { image:umb3 ,title:"vivo x7 Pro" ,  price:"300,000 FCFA" ,id:10},
-          { image:umb4 ,title:"vivo x7 Pro" ,  price:"300,000 FCFA" ,id:11},
-          { image:swt ,title:"vivo x7 Pro" ,  price:"300,000 FCFA" ,id:11},
+        [  { image:ps5 ,title:"Play Station 5 " ,  price:"900,000 FCFA" ,id:1} ,
+          { image:xbox,title:"Xbox One" ,  price:"500,000 FCFA",id:2 },
+          { image:xc ,title:"Xbox Controller" ,  price:"90,000 FCFA",id:3 },
+          { image:pc,title:"PS5 controller" ,  price:"20,000 FCFA" ,id:4},
+          { image:gear,title:"Xbox Gear" ,  price:"100,000 FCFA" ,id:5},
+          { image:ps4,title:"Play Station 4" ,  price:"100,000 FCFA" ,id:6},
+          { image:nintendo,title:"Nintendo Switch" ,  price:"100,000 FCFA" ,id:7},
+          { image:gh,title:"Gaming Headset" ,  price:"100,000 FCFA" ,id:8},
+          { image:gh2,title:"Gaming Headset" ,  price:"100,000 FCFA" ,id:9},
+          { image:cd,title:"FIFA 22" ,  price:"100,000 FCFA" ,id:10},
+          { image:gc,title:"Android Game Controller" ,  price:"100,000 FCFA" ,id:11},
+          { image:gta,title:"GTA V" ,  price:"100,000 FCFA" ,id:12}
+          
         ])
   return (
     <div class="d-flex justify-content-around flex-wrap mt-3 " >
@@ -70,4 +70,4 @@ function Rain() {
   )
 }
 
-export default Rain
+export default Game

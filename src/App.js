@@ -6,6 +6,7 @@ import { BrowserRouter as Router ,Switch,  Route } from 'react-router-dom';
 import Shoes from './Components/Pages/Shoes';
 import Phone from './Components/Pages/Phone';
 import Rain from './Components/Pages/Rain';
+import Games from './Components/Pages/Game'
 
 
 
@@ -37,6 +38,10 @@ function App() {
          </Route>
          <Route path='/rain'>
            <Rain/>
+
+         </Route>
+         <Route path='/games'>
+           <Games/>
 
          </Route>
 

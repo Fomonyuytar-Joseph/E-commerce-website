@@ -1,32 +1,29 @@
 import React from 'react'
 import { useState } from 'react'
-import tv1 from './tvImages/tv1.jpg'
-import tv2 from './tvImages/tv2.jpg'
-import tv3 from './tvImages/tv3.jpg'
-import tv4 from './tvImages/tv4.jpeg'
-import tv5 from './tvImages/tv5.jpg'
-import tv6 from './tvImages/tv6.jpg'
-import tv7 from './tvImages/tv7.png'
-import tv8 from './tvImages/tv8.jpg'
-import tv9 from './tvImages/tv9.jpg'
-import sony from './tvImages/sony.jpg'
-import apple from './tvImages/appletv.jpg'
-import appletv1 from './tvImages/appletv1.jpeg'
+import mv from './movies/mv.jpg'
+import mv1 from './movies/mv1.jpg'
+import mv2 from './movies/mv2.jpg'
+import mv3 from './movies/mv3.jpg'
+import mv4 from './movies/mv4.jpg'
+import mv5 from './movies/mv5.png'
+import mv6 from './movies/mv6.jpg'
+import mv7 from './movies/mv7.jpg'
+import mv8 from './movies/mv8.jpg'
+import mv9 from './movies/mv9.jpg'
 
-function Tv() {
+function Movie() {
     const [items, setItems] = useState(
-        [  { image:tv1 ,title:"blanket " ,  price:"900,000 FCFA" ,id:1} ,
-          { image:tv2,title:"Note 20 Ultra" ,  price:"500,000 FCFA",id:2 },
-          { image:tv3 ,title:"iphone 8" ,  price:"90,000 FCFA",id:3 },
-          { image:tv4 ,title:"Pixel 4a" ,  price:"200,000 FCFA" ,id:4},
-          { image:tv5 ,title:"Samsung S21 Ultra" ,  price:"700,000 FCFA" ,id:5},
-          { image:tv6 ,title:"Oneplus 8" ,  price:"300,000 FCFA",id:6},
-          { image:apple ,title:"Huawei P50 Pro" ,  price:"950,000 FCFA" ,id:7},
-          { image:appletv1,title:"iphone X" ,  price:"200,000 FCFA",id:8},
-          { image:sony ,title:"vivo x7 Pro" ,  price:"300,000 FCFA" ,id:9},
-          { image:tv7 ,title:"vivo x7 Pro" ,  price:"300,000 FCFA" ,id:10},
-          { image:tv8 ,title:"vivo x7 Pro" ,  price:"300,000 FCFA" ,id:11},
-          { image:tv9 ,title:"vivo x7 Pro" ,  price:"300,000 FCFA" ,id:11},
+        [  { image:mv1 ,title:"Naruto " ,  price:"5,000 FCFA" ,id:1} ,
+          { image:mv2,title:"Attack on Titans Season 2" ,  price:"6,000 FCFA",id:2 },
+          { image:mv3 ,title:"Attack on Titans Season 1" ,  price:"8,000 FCFA",id:3 },
+          { image:mv4 ,title:"Wonder" ,  price:"4,000 FCFA" ,id:4},
+          { image:mv5 ,title:"WarCraft" ,  price:"5,000 FCFA" ,id:5},
+          { image:mv6 ,title:"Frozen" ,  price:"2,000 FCFA",id:6},
+          { image:mv7 ,title:"Walking DEad" ,  price:"7,000 FCFA" ,id:7},
+          { image:mv8,title:"Stranger Things Season 3" ,  price:"10,000 FCFA",id:8},
+          { image:mv9 ,title:"Dragon Ball Z" ,  price:"2,000 FCFA" ,id:9},
+          { image:mv ,title:"Avengers" ,  price:"5,000 FCFA" ,id:10},
+          
         ])
   return (
     <div class="d-flex justify-content-around flex-wrap mt-3 " >
@@ -69,4 +66,4 @@ function Tv() {
   )
 }
 
-export default Tv
+export default Movie

@@ -7,6 +7,9 @@ import Shoes from './Components/Pages/Shoes';
 import Phone from './Components/Pages/Phone';
 import Rain from './Components/Pages/Rain';
 import Games from './Components/Pages/Game'
+import Tv from './Components/Pages/Tv';
+import Kitchen from './Components/Pages/Kitchen';
+import Movie from './Components/Pages/Movie';
 
 
 
@@ -42,6 +45,18 @@ function App() {
          </Route>
          <Route path='/games'>
            <Games/>
+
+         </Route>
+         <Route path='/tv'>
+           <Tv/>
+
+         </Route>
+         <Route path='/kitchen'>
+           <Kitchen/>
+
+         </Route>
+         <Route path='/movies'>
+           <Movie/>
 
          </Route>
 

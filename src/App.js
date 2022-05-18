@@ -10,6 +10,7 @@ import Games from './Components/Pages/Game'
 import Tv from './Components/Pages/Tv';
 import Kitchen from './Components/Pages/Kitchen';
 import Movie from './Components/Pages/Movie';
+import School from './Components/Pages/School';
 
 
 
@@ -57,6 +58,11 @@ function App() {
          </Route>
          <Route path='/movies'>
            <Movie/>
+
+         </Route>
+
+         <Route path='/school'>
+           <School/>
 
          </Route>
 

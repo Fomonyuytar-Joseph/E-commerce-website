@@ -1,28 +1,31 @@
 import React from 'react'
 import { useState } from 'react'
-import mv from './movies/mv.jpg'
-import mv1 from './movies/mv1.jpg'
-import mv2 from './movies/mv2.jpg'
-import mv3 from './movies/mv3.jpg'
-import mv4 from './movies/mv4.jpg'
-import mv5 from './movies/mv5.png'
-import mv6 from './movies/mv6.jpg'
-import mv7 from './movies/mv7.jpg'
-import mv8 from './movies/mv8.jpg'
-import mv9 from './movies/mv9.jpg'
+import pencil2 from './school/pencil2.jpg'
+import pencil from './school/pencil.jpg'
+import pen from './school/pen.jpeg'
+import color from './school/color.jfif'
+import color2 from './school/color2.png'
+import chalk from './school/chalk.jfif'
+import cal2 from './school/cal2.jfif'
+import cal from './school/cal2.jfif'
+import chalk2 from './school/chalk2.jfif'
+import bag from './school/bag.jfif'
+import bag2 from './school/bag2.jpg'
 
-function Movie() {
+function School() {
     const [items, setItems] = useState(
-        [  { image:mv1 ,title:"Naruto " ,  price:"5,000 FCFA" ,id:1} ,
-          { image:mv2,title:"Attack on Titans Season 2" ,  price:"6,000 FCFA",id:2 },
-          { image:mv3 ,title:"Attack on Titans Season 1" ,  price:"8,000 FCFA",id:3 },
-          { image:mv4 ,title:"Wonder" ,  price:"4,000 FCFA" ,id:4},
-          { image:mv5 ,title:"WarCraft" ,  price:"5,000 FCFA" ,id:5},
-          { image:mv6 ,title:"Frozen" ,  price:"2,000 FCFA",id:6},
-          { image:mv7 ,title:"Walking Dead" ,  price:"7,000 FCFA" ,id:7},
-          { image:mv8,title:"Stranger Things Season 3" ,  price:"10,000 FCFA",id:8},
-          { image:mv9 ,title:"Dragon Ball Z" ,  price:"2,000 FCFA" ,id:9},
-          { image:mv ,title:"Avengers" ,  price:"5,000 FCFA" ,id:10},
+        [  { image:pencil ,title:"Pencil " ,  price:"5,000 FCFA" ,id:1} ,
+          { image:pencil2,title:"Pencil" ,  price:"6,000 FCFA",id:2 },
+          { image:pen , title:"Pencil" ,  price:"8,000 FCFA",id:3 },
+          { image:color ,title:"Wonder" ,  price:"4,000 FCFA" ,id:4},
+          { image:color2 ,title:"WarCraft" ,  price:"5,000 FCFA" ,id:5},
+          { image:chalk ,title:"Frozen" ,  price:"2,000 FCFA",id:6},
+          { image:cal2 ,title:"Walking DEad" ,  price:"7,000 FCFA" ,id:7},
+          { image:cal,title:"Stranger Things Season 3" ,  price:"10,000 FCFA",id:8},
+          { image:chalk2 ,title:"Dragon Ball Z" ,  price:"2,000 FCFA" ,id:9},
+          { image:pencil ,title:"Avengers" ,  price:"5,000 FCFA" ,id:10},
+          { image:bag ,title:"Avengers" ,  price:"5,000 FCFA" ,id:11},
+          { image:bag2 ,title:"Avengers" ,  price:"5,000 FCFA" ,id:12},
           
         ])
   return (
@@ -66,4 +69,4 @@ function Movie() {
   )
 }
 
-export default Movie
+export default School

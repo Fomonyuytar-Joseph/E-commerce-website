@@ -20,13 +20,13 @@ function Cards() {
    [ { title:'Get your Shoes' , image:shoe , productLink:"/shoes",id:1 },
     { title:'Game Accessories' , image:controller , productLink:'/games', id:2  },
     { title:'Latest iphones' , image:phone , productLink:'/phones',id:3 },
-    { title:'pullover' , image:sweater , productLink:'/pullover',id:4 },
+    { title:'Dresses' , image:sweater , productLink:'/pullover',id:4 },
     { title:'kitchen Utensils' , image:kitchen , productLink:'/kitchen',id:5},
     { title:'Rainy Season is near' , image:rain , productLink:'/rain',id:6 },
     { title:'television' , image:tv , productLink:'/tv',id:7 },
     { title:'school' , image:school , productLink:'/school',id:8 },
     { title:'Get you blockbusters' , image:strange , productLink:'/movies',id:9 },
-    { title:'Gucci' , image:controller , productLink:'/gucci',id:10 },
+    { title:'Cosmetics' , image:controller , productLink:'/gucci',id:10 },
   ]
   )
   

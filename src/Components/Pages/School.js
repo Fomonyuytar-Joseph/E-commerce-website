@@ -14,18 +14,18 @@ import bag2 from './school/bag2.jpg'
 
 function School() {
     const [items, setItems] = useState(
-        [  { image:pencil ,title:"Pencil " ,  price:"5,000 FCFA" ,id:1} ,
-          { image:pencil2,title:"Pencil" ,  price:"6,000 FCFA",id:2 },
-          { image:pen , title:"Pencil" ,  price:"8,000 FCFA",id:3 },
-          { image:color ,title:"Wonder" ,  price:"4,000 FCFA" ,id:4},
-          { image:color2 ,title:"WarCraft" ,  price:"5,000 FCFA" ,id:5},
-          { image:chalk ,title:"Frozen" ,  price:"2,000 FCFA",id:6},
-          { image:cal2 ,title:"Walking DEad" ,  price:"7,000 FCFA" ,id:7},
-          { image:cal,title:"Stranger Things Season 3" ,  price:"10,000 FCFA",id:8},
-          { image:chalk2 ,title:"Dragon Ball Z" ,  price:"2,000 FCFA" ,id:9},
-          { image:pencil ,title:"Avengers" ,  price:"5,000 FCFA" ,id:10},
-          { image:bag ,title:"Avengers" ,  price:"5,000 FCFA" ,id:11},
-          { image:bag2 ,title:"Avengers" ,  price:"5,000 FCFA" ,id:12},
+        [  { image:pencil ,title:"Pencil " ,  price:"2,000 FCFA" ,id:1} ,
+          { image:pencil2,title:"Pencil" ,  price:"1,000 FCFA",id:2 },
+          { image:pen , title:"Pens" ,  price:"4,000 FCFA",id:3 },
+          { image:color ,title:"Colors" ,  price:"3,000 FCFA" ,id:4},
+          { image:color2 ,title:"Colored Pencils" ,  price:"5,000 FCFA" ,id:5},
+          { image:chalk ,title:"White Chalk" ,  price:"1,000 FCFA",id:6},
+          { image:cal2 ,title:"Scientific Calculator" ,  price:"10,000 FCFA" ,id:7},
+          { image:cal,title:"Scientific Calculator" ,  price:"10,000 FCFA",id:8},
+          { image:chalk2 ,title:"Colored Chalks" ,  price:"2,000 FCFA" ,id:9},
+          { image:pencil ,title:"HB Pencil" ,  price:"2,000 FCFA" ,id:10},
+          { image:bag ,title:"School Bag" ,  price:"15,000 FCFA" ,id:11},
+          { image:bag2 ,title:"Red Bag " ,  price:"25,000 FCFA" ,id:12},
           
         ])
   return (

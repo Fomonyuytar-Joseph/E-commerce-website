@@ -16,18 +16,18 @@ import knife2 from './kitchen/knife2.webp'
 
 function Kitchen() {
     const [items, setItems] = useState(
-        [  { image:all ,title:"blanket " ,  price:"900,000 FCFA" ,id:1} ,
-          { image:all1,title:"Note 20 Ultra" ,  price:"500,000 FCFA",id:2 },
-          { image:all3 ,title:"iphone 8" ,  price:"90,000 FCFA",id:3 },
-          { image:spoon ,title:"Pixel 4a" ,  price:"200,000 FCFA" ,id:4},
-          { image:spoon2 ,title:"Samsung S21 Ultra" ,  price:"700,000 FCFA" ,id:5},
-          { image:spoon3 ,title:"Oneplus 8" ,  price:"300,000 FCFA",id:6},
-          { image:pot ,title:"Huawei P50 Pro" ,  price:"950,000 FCFA" ,id:7},
-          { image:pot2,title:"iphone X" ,  price:"200,000 FCFA",id:8},
-          { image:pan ,title:"vivo x7 Pro" ,  price:"300,000 FCFA" ,id:9},
-          { image:pan2 ,title:"vivo x7 Pro" ,  price:"300,000 FCFA" ,id:10},
-          { image:knife ,title:"vivo x7 Pro" ,  price:"300,000 FCFA" ,id:11},
-          { image:knife2 ,title:"vivo x7 Pro" ,  price:"300,000 FCFA" ,id:11},
+        [  { image:all ,title:"Black Complete Kitchen Set " ,  price:"90,000 FCFA" ,id:1} ,
+          { image:all1,title:"Purple Complete Kitchen Set" ,  price:"500,000 FCFA",id:2 },
+          { image:all3 ,title:"Puprle Pans" ,  price:"10,000 FCFA",id:3 },
+          { image:spoon ,title:"Luxury Spoons" ,  price:"20,000 FCFA" ,id:4},
+          { image:spoon2 ,title:"Kieeu Spoons" ,  price:"6,000 FCFA" ,id:5},
+          { image:spoon3 ,title:"Wooden Spoons" ,  price:"5,000 FCFA",id:6},
+          { image:pot ,title:"Silver Pot" ,  price:"9,000 FCFA" ,id:7},
+          { image:pot2,title:"Alluminium Pot" ,  price:"7,000 FCFA",id:8},
+          { image:pan ,title:"Frying Pan" ,  price:"4,000 FCFA" ,id:9},
+          { image:pan2 ,title:"Frying Pan Variety" ,  price:"10,000 FCFA" ,id:10},
+          { image:knife ,title:"Knives" ,  price:"6,000 FCFA" ,id:11},
+          { image:knife2 ,title:"Kitchen Knives" ,  price:"300,000 FCFA" ,id:11},
         ])
   return (
     <div class="d-flex justify-content-around flex-wrap mt-3 " >

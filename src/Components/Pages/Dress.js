@@ -1,20 +1,22 @@
 import React from 'react'
 import { useState } from 'react'
+import jean from './dress/jean.jfif'
+import trouser from './dress/trouser.jfif'
 
-function Dess() {
+function Dress() {
     const [items, setItems] = useState(
-        [  { image:pencil ,title:"Pencil " ,  price:"5,000 FCFA" ,id:1} ,
-          { image:pencil2,title:"Pencil" ,  price:"6,000 FCFA",id:2 },
-          { image:pen , title:"Pencil" ,  price:"8,000 FCFA",id:3 },
-          { image:color ,title:"Wonder" ,  price:"4,000 FCFA" ,id:4},
-          { image:color2 ,title:"WarCraft" ,  price:"5,000 FCFA" ,id:5},
-          { image:chalk ,title:"Frozen" ,  price:"2,000 FCFA",id:6},
-          { image:cal2 ,title:"Walking DEad" ,  price:"7,000 FCFA" ,id:7},
-          { image:cal,title:"Stranger Things Season 3" ,  price:"10,000 FCFA",id:8},
-          { image:chalk2 ,title:"Dragon Ball Z" ,  price:"2,000 FCFA" ,id:9},
-          { image:pencil ,title:"Avengers" ,  price:"5,000 FCFA" ,id:10},
-          { image:bag ,title:"Avengers" ,  price:"5,000 FCFA" ,id:11},
-          { image:bag2 ,title:"Avengers" ,  price:"5,000 FCFA" ,id:12},
+        [  { image:jean ,title:"Blue Jean " ,  price:"5,000 FCFA" ,id:1} ,
+          { image:trouser,title:"Material Trouser" ,  price:"6,000 FCFA",id:2 },
+          { image:jean , title:"Pencil" ,  price:"8,000 FCFA",id:3 },
+          { image:trouser ,title:"Wonder" ,  price:"4,000 FCFA" ,id:4},
+          { image:jean ,title:"WarCraft" ,  price:"5,000 FCFA" ,id:5},
+          { image:jean,title:"Frozen" ,  price:"2,000 FCFA",id:6},
+          { image:jean ,title:"Walking DEad" ,  price:"7,000 FCFA" ,id:7},
+          { image:jean,title:"Stranger Things Season 3" ,  price:"10,000 FCFA",id:8},
+          { image:trouser ,title:"Dragon Ball Z" ,  price:"2,000 FCFA" ,id:9},
+          { image:jean ,title:"Avengers" ,  price:"5,000 FCFA" ,id:10},
+          { image:trouser,title:"Avengers" ,  price:"5,000 FCFA" ,id:11},
+          { image:jean ,title:"Avengers" ,  price:"5,000 FCFA" ,id:12},
           
         ])
   return (
@@ -58,4 +60,4 @@ function Dess() {
   )
 }
 
-export default Dess
+export default Dress

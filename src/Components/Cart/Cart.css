@@ -1,0 +1,27 @@
+.cartImage{
+    height: 200px;
+    width:150px;
+    margin-top: -40px;
+}
+
+.qtyBtn{
+    width: 50px;
+        height: 50px;
+        outline-style:initial;
+        border-radius: 100px;
+        cursor: pointer;
+        padding: 10px;
+        margin-right: 10px;
+        margin-left: 10px;
+        background-color: black;
+        color:#ffff
+  
+
+  
+}
+.total{
+    border-top: 1px solid rgba(0,0,0,.1);
+    padding: 2vh 0;
+
+
+}

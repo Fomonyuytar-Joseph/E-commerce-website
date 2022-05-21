@@ -12,18 +12,28 @@ import Kitchen from './Components/Pages/Kitchen';
 import Movie from './Components/Pages/Movie';
 import School from './Components/Pages/School';
 import Dress from './Components/Pages/Dress'
+import data from './data'
+import { useState } from 'react'
+import Cart from './Components/Cart/Cart';
 
 
 
 
 
 function App() {
+  const { products }= data
+  const [cartItems, setCartItems] = useState([]);
+
+  const onAdd = (product)=>{
+    setCartItems([...cartItems, { ...product }])
+  }
+  
   return (
    
     <>
     <Router>
 
-    <Navbar/>
+    <Navbar cartItems={cartItems}/>
     
     <Switch>
     <Route exact path='/'>
@@ -42,7 +52,7 @@ function App() {
 
          </Route>
          <Route path='/rain'>
-           <Rain/>
+           <Rain />
 
          </Route>
          <Route path='/games'>
@@ -68,7 +78,12 @@ function App() {
          </Route>
          
          <Route path='/dresses'>
-           <Dress/>
+           <Dress products={products} onAdd={onAdd}/>
+
+         </Route>
+
+         <Route path='/cart'>
+           <Cart cartItems={cartItems}/>
 
          </Route>
 

@@ -1,10 +1,11 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faShop } from '@fortawesome/free-solid-svg-icons'
+import { faShop ,faCartShopping } from '@fortawesome/free-solid-svg-icons'
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
-function Navbar() {
+function Navbar({cartItems}) {
   return (
     <>
      <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -19,10 +20,19 @@ function Navbar() {
     
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="yu">Home</a>
+        <Link to="/">
+          Home
+          </Link>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="yu">Our Properties</a>
+          
+          <Link to="/cart">
+
+          
+          <FontAwesomeIcon icon={faCartShopping} /><span style={{color:'red'}}>{cartItems.length}</span>
+           
+            </Link>
+            
         </li>
         <li class="nav-item">
           <a class="nav-link" href="yu">Agents</a>

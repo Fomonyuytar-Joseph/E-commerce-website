@@ -146,7 +146,7 @@ const data ={
     shoeProducts:[
         { image:point ,title:"Regular Shoe " ,  price:100000,id:1} ,
       { image:point2,title:"Note 20 Ultra" ,  price:100000,id:2 },
-      { image:point3 ,title:"iphone 8" ,  price:"90,000 FCFA",id:3 },
+      { image:point3 ,title:"iphone 8" ,  price:100000,id:3 },
       { image:sch1 ,title:"Pixel 4a" ,  price:"200,000 FCFA" ,id:4},
       { image:nk4 ,title:"Samsung S21 Ultra" ,  price:"700,000 FCFA" ,id:5},
       { image:nk5 ,title:"Oneplus 8" ,  price:"300,000 FCFA",id:6},

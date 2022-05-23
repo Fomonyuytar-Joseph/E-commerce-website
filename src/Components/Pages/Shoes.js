@@ -1,5 +1,5 @@
 import React from 'react'
-import { useState } from 'react'
+
 // import point from './shoeImages/point.png'
 // import point2 from './shoeImages/point2.jpg'
 // import point3 from './shoeImages/point3.jpg'
@@ -16,25 +16,12 @@ import { useState } from 'react'
 
 
 
-function Shoes() {
-  const [items, setItems] = useState(
-    [  { image:point ,title:"Regular Shoe " ,  price:"900,000 FCFA" ,id:1} ,
-      { image:point2,title:"Note 20 Ultra" ,  price:"500,000 FCFA",id:2 },
-      { image:point3 ,title:"iphone 8" ,  price:"90,000 FCFA",id:3 },
-      { image:sch1 ,title:"Pixel 4a" ,  price:"200,000 FCFA" ,id:4},
-      { image:nk4 ,title:"Samsung S21 Ultra" ,  price:"700,000 FCFA" ,id:5},
-      { image:nk5 ,title:"Oneplus 8" ,  price:"300,000 FCFA",id:6},
-      { image:nk6 ,title:"Huawei P50 Pro" ,  price:"950,000 FCFA" ,id:7},
-      { image:adidas ,title:"iphone X" ,  price:"200,000 FCFA",id:8},
-      { image:adidas2 ,title:"vivo x7 Pro" ,  price:"300,000 FCFA" ,id:9},
-      { image:adidas4 ,title:"vivo x7 Pro" ,  price:"300,000 FCFA" ,id:10},
-      { image:adidas5 ,title:"vivo x7 Pro" ,  price:"300,000 FCFA" ,id:11},
-      { image:school ,title:"vivo x7 Pro" ,  price:"300,000 FCFA" ,id:11},
-    ]
-    )
+function Shoes({shoeProducts , onAdd}) {
+  
+    
   return (
     <div class="d-flex justify-content-around flex-wrap mt-3 " >
-      {items.map( (item) => (
+      {shoeProducts.map( (item) => (
         <div class="card mb-5" style={{maxWidth: "430px"}} key={item.id}>
         <div class="row g-0">
           <div class="col-xl-4 " style={{height: "200px"}}>
@@ -59,7 +46,7 @@ function Shoes() {
               <option value="8">8</option>
             </select>
             <p class="card-text"> <button type='submit' class="buyButton"> Buy Now</button> </p>
-            <p class="card-text">  <button type='submit' class="buyButton"> Add to Kart</button> </p>
+            <p class="card-text">  <button type='submit' onClick={()=>onAdd(item)} class="buyButton"> Add to Kart</button> </p>
       </form></p>
               
             </div>

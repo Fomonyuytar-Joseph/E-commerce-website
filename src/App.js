@@ -17,16 +17,35 @@ import { useState } from 'react'
 import Cart from './Components/Cart/Cart';
 
 
-
-
-
 function App() {
-  const { products }= data
+  const { DressProducts, GameProducts ,TvProducts ,phoneProducts ,rainProducts }= data
   const [cartItems, setCartItems] = useState([]);
 
-  const onAdd = (product)=>{
-    setCartItems([...cartItems, { ...product }])
-  }
+  const onAdd = (product) => {
+    const exist = cartItems.find((x) => x.id === product.id);
+    if (exist) {
+      setCartItems(
+        cartItems.map((x) =>
+          x.id === product.id ? { ...exist, qty: exist.qty + 1 } : x
+        )
+      );
+    } else {
+      setCartItems([...cartItems, { ...product, qty: 1 }]);
+    }
+  };
+
+  const onRemove = (product) => {
+    const exist = cartItems.find((x) => x.id === product.id);
+    if (exist.qty === 1) {
+      setCartItems(cartItems.filter((x) => x.id !== product.id));
+    } else {
+      setCartItems(
+        cartItems.map((x) =>
+          x.id === product.id ? { ...exist, qty: exist.qty - 1 } : x
+        )
+      );
+    }
+  };
   
   return (
    
@@ -48,19 +67,19 @@ function App() {
 
          </Route>
          <Route path='/phones'>
-           <Phone/>
+           <Phone phoneProducts={phoneProducts} onAdd={onAdd} onRemove={onRemove} />
 
          </Route>
          <Route path='/rain'>
-           <Rain />
+           <Rain rainProducts={rainProducts} onAdd={onAdd} onRemove={onRemove} />
 
          </Route>
          <Route path='/games'>
-           <Games/>
+           <Games GameProducts={GameProducts} onAdd={onAdd} onRemove={onRemove}/>
 
          </Route>
          <Route path='/tv'>
-           <Tv/>
+           <Tv TvProducts={TvProducts} onAdd={onAdd} onRemove={onRemove} />
 
          </Route>
          <Route path='/kitchen'>
@@ -78,12 +97,12 @@ function App() {
          </Route>
          
          <Route path='/dresses'>
-           <Dress products={products} onAdd={onAdd}/>
+           <Dress DressProducts={DressProducts} onAdd={onAdd} onRemove={onRemove} />
 
          </Route>
 
          <Route path='/cart'>
-           <Cart cartItems={cartItems}/>
+           <Cart cartItems={cartItems} onAdd={onAdd} onRemove={onRemove}/>
 
          </Route>
 

@@ -1,34 +1,23 @@
 import React from 'react'
-import phone from './images/iphone12.jpg'
-import n20 from './phoneImages/note20.jpeg'
-import i8 from './phoneImages/iphone8.jpg'
-import pixel from './phoneImages/pixel4.jpg'
-import oneplus from './phoneImages/oneplus9.png'
-import s21ultra from './phoneImages/s21ultra.jpg'
-import p50 from './phoneImages/Huawei-P50-Pro.jpg'
-import ix from './phoneImages/iphonex.jpg'
-import vivo from './phoneImages/vivo.jpg'
+// import phone from './images/iphone12.jpg'
+// import n20 from './phoneImages/note20.jpeg'
+// import i8 from './phoneImages/iphone8.jpg'
+// import pixel from './phoneImages/pixel4.jpg'
+// import oneplus from './phoneImages/oneplus9.png'
+// import s21ultra from './phoneImages/s21ultra.jpg'
+// import p50 from './phoneImages/Huawei-P50-Pro.jpg'
+// import ix from './phoneImages/iphonex.jpg'
+// import vivo from './phoneImages/vivo.jpg'
 import './phone.css'
-import { useState } from 'react'
 
-function Phone() {
-  const [items, setItems] = useState(
-  [  { image:phone ,title:"iphone 13 pro " ,  price:"900,000 FCFA" ,id:1} ,
-    { image:n20 ,title:"Note 20 Ultra" ,  price:"500,000 FCFA",id:2 },
-    { image:i8 ,title:"iphone 8" ,  price:"90,000 FCFA",id:3 },
-    { image:pixel ,title:"Pixel 4a" ,  price:"200,000 FCFA" ,id:4},
-    { image:s21ultra ,title:"Samsung S21 Ultra" ,  price:"700,000 FCFA" ,id:5},
-    { image:oneplus ,title:"Oneplus 8" ,  price:"300,000 FCFA",id:6},
-    { image:p50 ,title:"Huawei P50 Pro" ,  price:"950,000 FCFA" ,id:7},
-    { image:ix ,title:"iphone X" ,  price:"200,000 FCFA",id:8},
-    { image:vivo ,title:"vivo x7 Pro" ,  price:"300,000 FCFA" ,id:9}
-  ]
-  )
+
+function Phone({ phoneProducts  , onAdd}) {
+ 
   
       
   return (
     <div class="d-flex justify-content-around flex-wrap " >
-      {items.map( (item) => (
+      {phoneProducts.map( (item) => (
         <div class="card mb-3" style={{maxWidth: "430px"}} key={item.id}>
         <div class="row g-0">
           <div class="col-md-4 " style={{height: "250px"}}>
@@ -53,7 +42,7 @@ function Phone() {
               <option value="8">8</option>
             </select>
             <p class="card-text"> <button type='submit' class="buyButton"> Buy Now</button> </p>
-            <p class="card-text">  <button type='submit' class="buyButton"> Add to Kart</button> </p>
+            <p class="card-text">  <button type='submit' onClick={()=>onAdd(item)} class="buyButton"> Add to Kart</button> </p>
       </form></p>
               
             </div>

@@ -1,30 +1,13 @@
 import React from 'react'
-import { useState } from 'react'
 
 
-function Dress( props) {
-  const {products , onAdd} = props
-  console.log( onAdd)
-    // const [items, setItems] = useState(
-    //     [  { image:jean ,title:"Blue Jean " ,  price:"5,000 FCFA" ,id:1} ,
-    //       { image:trouser,title:"Material Trouser" ,  price:"6,000 FCFA",id:2 },
-    //       { image:jean , title:"Pencil" ,  price:"8,000 FCFA",id:3 },
-    //       { image:trouser ,title:"Wonder" ,  price:"4,000 FCFA" ,id:4},
-    //       { image:jean ,title:"WarCraft" ,  price:"5,000 FCFA" ,id:5},
-    //       { image:jean,title:"Frozen" ,  price:"2,000 FCFA",id:6},
-    //       { image:jean ,title:"Walking DEad" ,  price:"7,000 FCFA" ,id:7},
-    //       { image:jean,title:"Stranger Things Season 3" ,  price:"10,000 FCFA",id:8},
-    //       { image:trouser ,title:"Dragon Ball Z" ,  price:"2,000 FCFA" ,id:9},
-    //       { image:jean ,title:"Avengers" ,  price:"5,000 FCFA" ,id:10},
-    //       { image:trouser,title:"Avengers" ,  price:"5,000 FCFA" ,id:11},
-    //       { image:jean ,title:"Avengers" ,  price:"5,000 FCFA" ,id:12},
-          
-    //     ])
 
-        
+function Dress( {DressProducts , onAdd }) {
+ 
+  
   return (
     <div class="d-flex justify-content-around flex-wrap mt-3 " >
-      { products.map( (item) => (
+      { DressProducts.map( (item) => (
         <div class="card mb-5" style={{maxWidth: "430px"}} key={item.id}>
         <div class="row g-0">
           <div class="col-xl-4 " style={{height: "200px"}}>

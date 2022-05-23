@@ -155,7 +155,7 @@ const data ={
       { image:adidas2 ,title:"vivo x7 Pro" ,  price:100000 ,id:9},
       { image:adidas4 ,title:"vivo x7 Pro" ,  price:100000,id:10},
       { image:adidas5 ,title:"vivo x7 Pro" ,  price:100000,id:11},
-      { image:school ,title:"vivo x7 Pro" ,  price:"300,000 FCFA" ,id:11},
+      { image:school ,title:"vivo x7 Pro" ,  price:100000 ,id:11},
 
     ]
 

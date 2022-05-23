@@ -153,8 +153,8 @@ const data ={
       { image:nk6 ,title:"Huawei P50 Pro" ,  price:100000 ,id:7},
       { image:adidas ,title:"iphone X" ,  price:100000,id:8},
       { image:adidas2 ,title:"vivo x7 Pro" ,  price:100000 ,id:9},
-      { image:adidas4 ,title:"vivo x7 Pro" ,  price:"300,000 FCFA" ,id:10},
-      { image:adidas5 ,title:"vivo x7 Pro" ,  price:"300,000 FCFA" ,id:11},
+      { image:adidas4 ,title:"vivo x7 Pro" ,  price:100000,id:10},
+      { image:adidas5 ,title:"vivo x7 Pro" ,  price:100000,id:11},
       { image:school ,title:"vivo x7 Pro" ,  price:"300,000 FCFA" ,id:11},
 
     ]

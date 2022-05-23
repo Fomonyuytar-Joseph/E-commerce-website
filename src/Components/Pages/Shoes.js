@@ -1,20 +1,5 @@
 import React from 'react'
 
-// import point from './shoeImages/point.png'
-// import point2 from './shoeImages/point2.jpg'
-// import point3 from './shoeImages/point3.jpg'
-// import sch1 from './shoeImages/sch1.jpg'
-// import nk4 from './shoeImages/nk4.jpg'
-// import nk5 from './shoeImages/nk5.jpg'
-// import nk6 from './shoeImages/nk6.jpg'
-// import adidas from './shoeImages/adidas.jpg'
-// import adidas2 from './shoeImages/adidas2.jpg'
-// import adidas4 from './shoeImages/adidas4.jpg'
-// import adidas5 from './shoeImages/adidas5.jpg'
-// import school from './shoeImages/schoolShoe.jpg'
-
-
-
 
 function Shoes({shoeProducts , onAdd}) {
   

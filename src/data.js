@@ -62,6 +62,42 @@ import adidas4 from './Components/Pages/shoeImages/adidas4.jpg'
 import adidas5 from './Components/Pages/shoeImages/adidas5.jpg'
 import school from './Components/Pages/shoeImages/schoolShoe.jpg'
 
+import mv from './Components/Pages/movies/mv.jpg'
+import mv1 from './Components/Pages/movies/mv1.jpg'
+import mv2 from './Components/Pages/movies/mv2.jpg'
+import mv3 from './Components/Pages/movies/mv3.jpg'
+import mv4 from './Components/Pages/movies/mv4.jpg'
+import mv5 from './Components/Pages/movies/mv5.png'
+import mv6 from './Components/Pages/movies/mv6.jpg'
+import mv7 from './Components/Pages/movies/mv7.jpg'
+import mv8 from './Components/Pages/movies/mv8.jpg'
+import mv9 from './Components/Pages/movies/mv9.jpg'
+
+import all from './Components/Pages/kitchen/all.jpg'
+import all1 from './Components/Pages/kitchen/all1.jpg'
+import all3 from './Components/Pages/kitchen/all3.jpg'
+import spoon from './Components/Pages/kitchen/spoon.jpg'
+import spoon2 from './Components/Pages/kitchen/spoon2.jpg'
+import spoon3 from './Components/Pages/kitchen/spoon3.jpg'
+import pot from './Components/Pages/kitchen/pot.jpg'
+import pot2 from './Components/Pages/kitchen/pot2.jpg'
+import pan from './Components/Pages/kitchen/pan.jpg'
+import pan2 from './Components/Pages/kitchen/pan2.jpg'
+import knife from './Components/Pages/kitchen/knife.jpg'
+import knife2 from './Components/Pages/kitchen/knife2.webp'
+
+import pencil2 from './Components/Pages/school/pencil2.jpg'
+import pencil from './Components/Pages/school/pencil.jpg'
+import pen from './Components/Pages/school/pen.jpeg'
+import color from './Components/Pages/school/color.jfif'
+import color2 from './Components/Pages/school/color2.png'
+import chalk from './Components/Pages/school/chalk.jfif'
+import cal2 from './Components/Pages/school/cal2.jfif'
+import cal from './Components/Pages/school/cal2.jfif'
+import chalk2 from './Components/Pages/school/chalk2.jfif'
+import bag from './Components/Pages/school/bag.jfif'
+import bag2 from './Components/Pages/school/bag2.jpg'
+
 const data ={
     DressProducts :[
         { image:jean ,title:"Blue Jean " ,  price:5000  ,id:1} ,
@@ -157,7 +193,49 @@ const data ={
       { image:adidas5 ,title:"vivo x7 Pro" ,  price:100000,id:11},
       { image:school ,title:"vivo x7 Pro" ,  price:100000 ,id:11},
 
+    ],
+    movieProducts:[
+        { image:mv1 ,title:"Naruto " ,  price:100000 ,id:1} ,
+        { image:mv2,title:"Attack on Titans Season 2" ,  price:100000,id:2 },
+        { image:mv3 ,title:"Attack on Titans Season 1" ,  price:100000,id:3 },
+        { image:mv4 ,title:"Wonder" ,  price:100000 ,id:4},
+        { image:mv5 ,title:"WarCraft" ,  price:100000 ,id:5},
+        { image:mv6 ,title:"Frozen" ,  price:100000,id:6},
+        { image:mv7 ,title:"Walking Dead" ,  price:100000 ,id:7},
+        { image:mv8,title:"Stranger Things Season 3" ,  price:100000,id:8},
+        { image:mv9 ,title:"Dragon Ball Z" ,  price:"2,000 FCFA" ,id:9},
+        { image:mv ,title:"Avengers" ,  price:"5,000 FCFA" ,id:10},
+    ],
+    kitchenProducts:[
+        { image:all ,title:"Black Complete Kitchen Set " ,  price:"90,000 FCFA" ,id:1} ,
+          { image:all1,title:"Purple Complete Kitchen Set" ,  price:"500,000 FCFA",id:2 },
+          { image:all3 ,title:"Puprle Pans" ,  price:"10,000 FCFA",id:3 },
+          { image:spoon ,title:"Luxury Spoons" ,  price:"20,000 FCFA" ,id:4},
+          { image:spoon2 ,title:"Kieeu Spoons" ,  price:"6,000 FCFA" ,id:5},
+          { image:spoon3 ,title:"Wooden Spoons" ,  price:"5,000 FCFA",id:6},
+          { image:pot ,title:"Silver Pot" ,  price:"9,000 FCFA" ,id:7},
+          { image:pot2,title:"Alluminium Pot" ,  price:"7,000 FCFA",id:8},
+          { image:pan ,title:"Frying Pan" ,  price:"4,000 FCFA" ,id:9},
+          { image:pan2 ,title:"Frying Pan Variety" ,  price:"10,000 FCFA" ,id:10},
+          { image:knife ,title:"Knives" ,  price:"6,000 FCFA" ,id:11},
+          { image:knife2 ,title:"Kitchen Knives" ,  price:"300,000 FCFA" ,id:11},
+
+    ],
+    schoolProducts:[
+        { image:pencil ,title:"Pencil " ,  price:"2,000 FCFA" ,id:1} ,
+        { image:pencil2,title:"Pencil" ,  price:"1,000 FCFA",id:2 },
+        { image:pen , title:"Pens" ,  price:"4,000 FCFA",id:3 },
+        { image:color ,title:"Colors" ,  price:"3,000 FCFA" ,id:4},
+        { image:color2 ,title:"Colored Pencils" ,  price:"5,000 FCFA" ,id:5},
+        { image:chalk ,title:"White Chalk" ,  price:"1,000 FCFA",id:6},
+        { image:cal2 ,title:"Scientific Calculator" ,  price:"10,000 FCFA" ,id:7},
+        { image:cal,title:"Scientific Calculator" ,  price:"10,000 FCFA",id:8},
+        { image:chalk2 ,title:"Colored Chalks" ,  price:"2,000 FCFA" ,id:9},
+        { image:pencil ,title:"HB Pencil" ,  price:"2,000 FCFA" ,id:10},
+        { image:bag ,title:"School Bag" ,  price:"15,000 FCFA" ,id:11},
+        { image:bag2 ,title:"Red Bag " ,  price:"25,000 FCFA" ,id:12},
     ]
+
 
     
 }

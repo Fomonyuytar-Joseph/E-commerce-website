@@ -1,36 +1,12 @@
 import React from 'react'
-import { useState } from 'react'
-import pencil2 from './school/pencil2.jpg'
-import pencil from './school/pencil.jpg'
-import pen from './school/pen.jpeg'
-import color from './school/color.jfif'
-import color2 from './school/color2.png'
-import chalk from './school/chalk.jfif'
-import cal2 from './school/cal2.jfif'
-import cal from './school/cal2.jfif'
-import chalk2 from './school/chalk2.jfif'
-import bag from './school/bag.jfif'
-import bag2 from './school/bag2.jpg'
 
-function School() {
-    const [items, setItems] = useState(
-        [  { image:pencil ,title:"Pencil " ,  price:"2,000 FCFA" ,id:1} ,
-          { image:pencil2,title:"Pencil" ,  price:"1,000 FCFA",id:2 },
-          { image:pen , title:"Pens" ,  price:"4,000 FCFA",id:3 },
-          { image:color ,title:"Colors" ,  price:"3,000 FCFA" ,id:4},
-          { image:color2 ,title:"Colored Pencils" ,  price:"5,000 FCFA" ,id:5},
-          { image:chalk ,title:"White Chalk" ,  price:"1,000 FCFA",id:6},
-          { image:cal2 ,title:"Scientific Calculator" ,  price:"10,000 FCFA" ,id:7},
-          { image:cal,title:"Scientific Calculator" ,  price:"10,000 FCFA",id:8},
-          { image:chalk2 ,title:"Colored Chalks" ,  price:"2,000 FCFA" ,id:9},
-          { image:pencil ,title:"HB Pencil" ,  price:"2,000 FCFA" ,id:10},
-          { image:bag ,title:"School Bag" ,  price:"15,000 FCFA" ,id:11},
-          { image:bag2 ,title:"Red Bag " ,  price:"25,000 FCFA" ,id:12},
-          
-        ])
+
+
+function School({schoolProducts ,onAdd}) {
+    
   return (
     <div class="d-flex justify-content-around flex-wrap mt-3 " >
-      {items.map( (item) => (
+      {schoolProducts.map( (item) => (
         <div class="card mb-5" style={{maxWidth: "430px"}} key={item.id}>
         <div class="row g-0">
           <div class="col-xl-4 " style={{height: "200px"}}>
@@ -42,21 +18,10 @@ function School() {
               <p class="card-text">{item.price}</p>
               <p class="card-text" style={{marginTop:'-14px' , marginBottom:'4px' , fontWeight:'bold'}}>Quantity</p>
               <p class="card-text">
-                <form action="#">
-            
-            <select name="languages" id="lang" style={{ marginBottom:'8px'}}>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-              <option value="6">6</option>
-              <option value="7">7</option>
-              <option value="8">8</option>
-            </select>
+               
             <p class="card-text"> <button type='submit' class="buyButton"> Buy Now</button> </p>
-            <p class="card-text">  <button type='submit' class="buyButton"> Add to Kart</button> </p>
-      </form></p>
+            <p class="card-text">  <button type='submit' onClick={()=>onAdd(item)}  class="buyButton"> Add to Kart</button> </p>
+      </p>
               
             </div>
           </div>

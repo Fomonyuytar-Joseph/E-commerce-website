@@ -18,7 +18,7 @@ import Cart from './Components/Cart/Cart';
 
 
 function App() {
-  const { DressProducts, GameProducts ,TvProducts ,phoneProducts ,rainProducts ,shoeProducts }= data
+  const { DressProducts, GameProducts ,TvProducts ,phoneProducts ,rainProducts ,shoeProducts , movieProducts ,schoolProducts ,kitchenProducts}= data
   const [cartItems, setCartItems] = useState([]);
 
   const onAdd = (product) => {
@@ -83,16 +83,16 @@ function App() {
 
          </Route>
          <Route path='/kitchen'>
-           <Kitchen/>
+           <Kitchen kitchenProducts={kitchenProducts} onAdd={onAdd} onRemove={onRemove}/>
 
          </Route>
          <Route path='/movies'>
-           <Movie/>
+           <Movie movieProducts={movieProducts} onAdd={onAdd} onRemove={onRemove}/>
 
          </Route>
 
          <Route path='/school'>
-           <School/>
+           <School schoolProducts={schoolProducts} onAdd={onAdd} onRemove={onRemove}/>
 
          </Route>
          

@@ -149,7 +149,7 @@ const data ={
       { image:point3 ,title:"iphone 8" ,  price:100000,id:3 },
       { image:sch1 ,title:"Pixel 4a" ,  price:100000,id:4},
       { image:nk4 ,title:"Samsung S21 Ultra" ,  price:100000 ,id:5},
-      { image:nk5 ,title:"Oneplus 8" ,  price:"300,000 FCFA",id:6},
+      { image:nk5 ,title:"Oneplus 8" ,  price:100000,id:6},
       { image:nk6 ,title:"Huawei P50 Pro" ,  price:"950,000 FCFA" ,id:7},
       { image:adidas ,title:"iphone X" ,  price:"200,000 FCFA",id:8},
       { image:adidas2 ,title:"vivo x7 Pro" ,  price:"300,000 FCFA" ,id:9},

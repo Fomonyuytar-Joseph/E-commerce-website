@@ -98,6 +98,19 @@ import chalk2 from './Components/Pages/school/chalk2.jfif'
 import bag from './Components/Pages/school/bag.jfif'
 import bag2 from './Components/Pages/school/bag2.jpg'
 
+import cm1 from './Components/Pages/cosmetics/cm1.jfif'
+import cm2 from './Components/Pages/cosmetics/cm2.webp'
+import cm3 from './Components/Pages/cosmetics/cm3.jpg'
+import cm4 from './Components/Pages/cosmetics/cm4.jfif'
+import lip from './Components/Pages/cosmetics/lip.jfif'
+import lip2 from './Components/Pages/cosmetics/lip2.jfif'
+import lip3 from './Components/Pages/cosmetics/lip3.jfif'
+import eye from './Components/Pages/cosmetics/eye.jfif'
+import eye1 from './Components/Pages/cosmetics/eye1.jfif'
+import foundation from './Components/Pages/cosmetics/foundation.jfif'
+import cream from './Components/Pages/cosmetics/cream.jfif'
+import paf from './Components/Pages/cosmetics/paf.jfif'
+
 const data ={
     DressProducts :[
         { image:jean ,title:"Blue Jean " ,  price:5000  ,id:1} ,
@@ -234,7 +247,22 @@ const data ={
         { image:pencil ,title:"HB Pencil" ,  price:"2,000 FCFA" ,id:10},
         { image:bag ,title:"School Bag" ,  price:"15,000 FCFA" ,id:11},
         { image:bag2 ,title:"Red Bag " ,  price:"25,000 FCFA" ,id:12},
+    ],
+    cosmeticProducts:[
+        { image:cm1 ,title:"Regular Shoe " ,  price:100000,id:1} ,
+        { image:cm2,title:"Note 20 Ultra" ,  price:100000,id:2 },
+        { image:cm3 ,title:"iphone 8" ,  price:100000,id:3 },
+        { image:cm4 ,title:"Pixel 4a" ,  price:100000,id:4},
+        { image:lip ,title:"Samsung S21 Ultra" ,  price:100000 ,id:5},
+        { image:lip2 ,title:"Oneplus 8" ,  price:100000,id:6},
+        { image:lip3 ,title:"Huawei P50 Pro" ,  price:100000 ,id:7},
+        { image:eye ,title:"iphone X" ,  price:100000,id:8},
+        { image:eye1 ,title:"vivo x7 Pro" ,  price:100000 ,id:9},
+        { image:foundation ,title:"vivo x7 Pro" ,  price:100000,id:10},
+        { image:cream ,title:"vivo x7 Pro" ,  price:100000,id:11},
+        { image:paf ,title:"vivo x7 Pro" ,  price:100000 ,id:12},
     ]
+
 
 
     

@@ -15,10 +15,11 @@ import Dress from './Components/Pages/Dress'
 import data from './data'
 import { useState } from 'react'
 import Cart from './Components/Cart/Cart';
+import Cosmetics from './Components/Pages/Cosmetics';
 
 
 function App() {
-  const { DressProducts, GameProducts ,TvProducts ,phoneProducts ,rainProducts ,shoeProducts , movieProducts ,schoolProducts ,kitchenProducts}= data
+  const { DressProducts, GameProducts ,TvProducts ,phoneProducts ,rainProducts ,shoeProducts , movieProducts ,schoolProducts ,kitchenProducts ,cosmeticProducts}= data
   const [cartItems, setCartItems] = useState([]);
 
   const onAdd = (product) => {
@@ -103,6 +104,10 @@ function App() {
 
          <Route path='/cart'>
            <Cart cartItems={cartItems} onAdd={onAdd} onRemove={onRemove}/>
+
+         </Route>
+         <Route path='/cosmetics'>
+           <Cosmetics cosmeticProducts={cosmeticProducts} onAdd={onAdd} onRemove={onRemove}/>
 
          </Route>
 

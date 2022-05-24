@@ -237,7 +237,7 @@ const data ={
     schoolProducts:[
         { image:pencil ,title:"Pencil " ,  price:2000  ,id:1} ,
         { image:pencil2,title:"Pencil" ,  price:100000,id:2 },
-        { image:pen , title:"Pens" ,  price:"4,000 FCFA",id:3 },
+        { image:pen , title:"Pens" ,  price:100000,id:3 },
         { image:color ,title:"Colors" ,  price:"3,000 FCFA" ,id:4},
         { image:color2 ,title:"Colored Pencils" ,  price:"5,000 FCFA" ,id:5},
         { image:chalk ,title:"White Chalk" ,  price:"1,000 FCFA",id:6},

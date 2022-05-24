@@ -244,9 +244,9 @@ const data ={
         { image:cal2 ,title:"Scientific Calculator" ,  price:100000 ,id:7},
         { image:cal,title:"Scientific Calculator" ,  price:100000,id:8},
         { image:chalk2 ,title:"Colored Chalks" ,  price:100000 ,id:9},
-        { image:pencil ,title:"HB Pencil" ,  price:"2,000 FCFA" ,id:10},
-        { image:bag ,title:"School Bag" ,  price:"15,000 FCFA" ,id:11},
-        { image:bag2 ,title:"Red Bag " ,  price:"25,000 FCFA" ,id:12},
+        { image:pencil ,title:"HB Pencil" ,  price:100000 ,id:10},
+        { image:bag ,title:"School Bag" ,  price:100000 ,id:11},
+        { image:bag2 ,title:"Red Bag " ,  price:100000,id:12},
     ],
     cosmeticProducts:[
         { image:cm1 ,title:"Regular Shoe " ,  price:100000,id:1} ,

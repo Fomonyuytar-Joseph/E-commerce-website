@@ -241,7 +241,7 @@ const data ={
         { image:color ,title:"Colors" ,  price:100000 ,id:4},
         { image:color2 ,title:"Colored Pencils" ,  price:100000 ,id:5},
         { image:chalk ,title:"White Chalk" ,  price:100000,id:6},
-        { image:cal2 ,title:"Scientific Calculator" ,  price:"10,000 FCFA" ,id:7},
+        { image:cal2 ,title:"Scientific Calculator" ,  price:100000 ,id:7},
         { image:cal,title:"Scientific Calculator" ,  price:"10,000 FCFA",id:8},
         { image:chalk2 ,title:"Colored Chalks" ,  price:"2,000 FCFA" ,id:9},
         { image:pencil ,title:"HB Pencil" ,  price:"2,000 FCFA" ,id:10},

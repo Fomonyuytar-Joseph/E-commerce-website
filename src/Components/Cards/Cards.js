@@ -8,6 +8,7 @@ import rain from './images/rainy.jpg'
 import tv from './images/Tv.jpg'
 import school from './images/school.jpg'
 import strange from './images/blue.jpg'
+import cm2 from './images/cm2.webp'
 // import gucci from './images/game.jpg'
 import { useState } from 'react'
 
@@ -26,7 +27,7 @@ function Cards() {
     { title:'television' , image:tv , productLink:'/tv',id:7 },
     { title:'school' , image:school , productLink:'/school',id:8 },
     { title:'Get you blockbusters' , image:strange , productLink:'/movies',id:9 },
-    { title:'Cosmetics' , image:controller , productLink:'/cosmetics',id:10 },
+    { title:'Cosmetics' , image:cm2 , productLink:'/cosmetics',id:10 },
   ]
   )
   

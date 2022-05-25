@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 function Navbar({cartItems}) {
   return (
     <>
-     <nav class="navbar navbar-expand-lg navbar-light bg-light">
+     <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
     <a class="navbar-brand" href="yu" style={{color:'#5e8ea2'}} ><span style={{color:'#5e8ea2' }}><FontAwesomeIcon icon={faShop} /></span> LEGIT MARKET</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">

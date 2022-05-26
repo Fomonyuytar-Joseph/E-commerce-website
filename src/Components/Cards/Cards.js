@@ -16,7 +16,7 @@ import { Link } from 'react-router-dom';
 // import Shoes  from '../Pages/Shoes';
 
 function Cards() {
-
+// Categories
   const [ products , setProducts ]  = useState(
    [ { title:'Get your Shoes' , image:shoe , productLink:"/shoes",id:1 },
     { title:'Game Accessories' , image:controller , productLink:'/games', id:2  },

@@ -196,6 +196,8 @@ const data ={
 
     ],
 
+    //Shoe
+
     shoeProducts:[
         { image:point ,title:"Regular Shoe " ,  price:100000,id:1} ,
       { image:point2,title:"Note 20 Ultra" ,  price:100000,id:2 },

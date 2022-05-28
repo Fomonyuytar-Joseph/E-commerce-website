@@ -2,7 +2,7 @@ import React from 'react'
 import gh2 from'./gh2.jpg'
 import './Cart.css'
 
-function Cart({cartItems ,onAdd ,onRemove}) {
+function Cart({cartItems ,onAdd ,onRemove ,onDelete}) {
     console.log(cartItems)
     var Total =  cartItems.reduce((a, c) => a + c.qty * c.price, 0);;
     console.log(Total)
@@ -37,7 +37,7 @@ function Cart({cartItems ,onAdd ,onRemove}) {
             <button className='qtyBtn'onClick={() => onRemove(item)}>-</button>{item.qty}<button className='qtyBtn' onClick={() => onAdd(item)}>+</button>
                                </div>
                                <div class="col">{item.qty} x ${item.price.toFixed(2)} </div>
-                               <div className='col '><button className='qtyBtn' onClick={() => onRemove(item)} >x</button></div>
+                               <div className='col '><button className='qtyBtn' onClick={() => onDelete(item)} >x</button></div>
                            </div>
                        </div>
             </div>

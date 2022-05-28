@@ -47,7 +47,10 @@ function App() {
       );
     }
   };
-  
+  const onDelete =(product)=>{
+    setCartItems(cartItems.filter((x) =>x.id !== product.id))
+
+  }
   return (
    
     <>
@@ -103,7 +106,7 @@ function App() {
          </Route>
 
          <Route path='/cart'>
-           <Cart cartItems={cartItems} onAdd={onAdd} onRemove={onRemove}/>
+           <Cart cartItems={cartItems} onAdd={onAdd} onRemove={onRemove} onDelete={onDelete}/>
 
          </Route>
          <Route path='/cosmetics'>

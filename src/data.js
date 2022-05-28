@@ -151,7 +151,7 @@ const data ={
 
 
     ],
-    //
+    //TV
     TvProducts:[
         { image:tv1 ,title:"Samsung HD TV " ,  price:100000  ,id:24} ,
         { image:tv2,title:"Panasonic Smart TV" ,  price:200000  ,id:25 },

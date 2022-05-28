@@ -112,6 +112,7 @@ import cream from './Components/Pages/cosmetics/cream.jfif'
 import paf from './Components/Pages/cosmetics/paf.jfif'
 
 const data ={
+    //Dresses
     DressProducts :[
         { image:jean ,title:"Blue Jean " ,  price:5000  ,id:1} ,
         { image:jean,title:"Material " ,  price:6000 ,id:2 },

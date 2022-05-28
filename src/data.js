@@ -132,6 +132,7 @@ const data ={
 
 
     ],
+    //game accessories
     GameProducts:[
         { image:ps5 ,title:"Play Station 5 " ,  price:900000  ,id:12} ,
           { image:xbox,title:"Xbox One" ,  price:500000 ,id:13 },
@@ -150,6 +151,7 @@ const data ={
 
 
     ],
+    //
     TvProducts:[
         { image:tv1 ,title:"Samsung HD TV " ,  price:100000  ,id:24} ,
         { image:tv2,title:"Panasonic Smart TV" ,  price:200000  ,id:25 },

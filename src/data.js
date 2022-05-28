@@ -167,6 +167,7 @@ const data ={
         { image:tv9 ,title:"Huawei TV" ,  price:300000  ,id:35},
     ],
 
+    // mobile phones
     phoneProducts:[
         { image:phone ,title:"iphone 13 pro " ,  price:100000  ,id:36} ,
     { image:n20 ,title:"Note 20 Ultra" ,  price:100000 ,id:37 },

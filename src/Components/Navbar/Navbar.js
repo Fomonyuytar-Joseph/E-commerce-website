@@ -39,9 +39,7 @@ function Navbar({cartItems }) {
             </Link>
             
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="yu"><span>Agents</span></a>
-        </li>
+        
        
         
         <li class="nav-item">

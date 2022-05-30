@@ -16,7 +16,7 @@ function Phone({ phoneProducts  , onAdd}) {
   
       
   return (
-    <div class="d-flex justify-content-around flex-wrap " >
+    <div class="d-flex justify-content-around flex-wrap " style={{marginTop:'90px'}}>
       {phoneProducts.map( (item) => (
         <div class="card mb-3" style={{maxWidth: "430px"}} key={item.id}>
         <div class="row g-0">

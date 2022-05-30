@@ -6,7 +6,7 @@ function Dress( {DressProducts , onAdd }) {
  
   
   return (
-    <div class="d-flex justify-content-around flex-wrap mt-3 " >
+    <div class="d-flex justify-content-around flex-wrap mt-7 " style={{ paddingTop:'100px'}} >
       { DressProducts.map( (item) => (
         <div class="card mb-5" style={{maxWidth: "430px"}} key={item.id}>
         <div class="row g-0">

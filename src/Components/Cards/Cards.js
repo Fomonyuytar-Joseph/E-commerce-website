@@ -32,7 +32,7 @@ function Cards() {
   )
   
   return (
-    <div class="d-flex justify-content-around flex-wrap " style={{marginTop:'-120px'}}>
+    <div class="d-flex justify-content-around flex-wrap " style={{marginTop:'-120px' ,backgroundColor:'#14315c'}}>
      {products.map( (product) =>(
        <div class="card mb-5" style={{width: "18rem"}}  key={product.id} >
   
@@ -42,7 +42,7 @@ function Cards() {
          <p class="card-text"></p>
          
           <Link to={product.productLink}>
-          <button type="button" class="btn btn-primary">Buy Now</button>
+          <button type="button" class="btn btn-primary" style={{backgroundColor:"#ee502c",color:'white' ,border:'none'}}>Buy Now</button>
         
          
          </Link>   

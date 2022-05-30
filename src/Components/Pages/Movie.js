@@ -5,7 +5,7 @@ import React from 'react'
 function Movie({movieProducts , onAdd}) {
     
   return (
-    <div class="d-flex justify-content-around flex-wrap mt-3 " >
+    <div class="d-flex justify-content-around flex-wrap mt-3 " style={{ paddingTop:'100px'}}>
       {movieProducts.map( (item) => (
         <div class="card mb-5" style={{maxWidth: "430px"}} key={item.id}>
         <div class="row g-0">

@@ -1,6 +1,6 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faShop ,faCartShopping } from '@fortawesome/free-solid-svg-icons'
+import { faShop ,faCartShopping ,faUser} from '@fortawesome/free-solid-svg-icons'
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { Link } from 'react-router-dom';
@@ -20,13 +20,13 @@ function Navbar({cartItems}) {
     
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-        <Link to="/">
-          Home
+        <Link to="/" style={{textDecoration:'none'}}>
+         <span className=' nav-link' > Home</span>
           </Link>
         </li>
-        <li class="nav-item">
+        <li class="nav-item nav-link">
           
-          <Link to="/cart">
+          <Link to="/cart" style={{textDecoration:'none'}}>
 
           
           <FontAwesomeIcon icon={faCartShopping} /><span style={{color:'red'}}>{cartItems.length}</span>
@@ -37,12 +37,10 @@ function Navbar({cartItems}) {
         <li class="nav-item">
           <a class="nav-link" href="yu">Agents</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="yu">Blog</a>
-        </li>
+       
         
         <li class="nav-item">
-          <a class="nav-link" href="yu">Login/SignUp</a>
+          <a class="nav-link" href="yu"><FontAwesomeIcon icon={faUser}/><span>Login/SignUp</span></a>
         </li>
 
         

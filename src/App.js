@@ -62,62 +62,75 @@ function App() {
     <Route exact path='/'>
     <Slider/>
     <Cards/>
+    <Footer/>
 
          </Route>
 
 
          <Route  path='/shoes'>
            <Shoes shoeProducts={shoeProducts} onAdd={onAdd} onRemove={onRemove}/>
+           <Footer/>
 
          </Route>
          <Route path='/phones'>
            <Phone phoneProducts={phoneProducts} onAdd={onAdd} onRemove={onRemove} />
+           <Footer/>
 
          </Route>
          <Route path='/rain'>
            <Rain rainProducts={rainProducts} onAdd={onAdd} onRemove={onRemove} />
+           <Footer/>
 
          </Route>
          <Route path='/games'>
            <Games GameProducts={GameProducts} onAdd={onAdd} onRemove={onRemove}/>
+           <Footer/>
 
          </Route>
          <Route path='/tv'>
            <Tv TvProducts={TvProducts} onAdd={onAdd} onRemove={onRemove} />
+           <Footer/>
 
          </Route>
          <Route path='/kitchen'>
            <Kitchen kitchenProducts={kitchenProducts} onAdd={onAdd} onRemove={onRemove}/>
+           <Footer/>
 
          </Route>
          <Route path='/movies'>
            <Movie movieProducts={movieProducts} onAdd={onAdd} onRemove={onRemove}/>
+           <Footer/>
 
          </Route>
 
          <Route path='/school'>
            <School schoolProducts={schoolProducts} onAdd={onAdd} onRemove={onRemove}/>
+           <Footer/>
 
          </Route>
          
          <Route path='/dresses'>
            <Dress DressProducts={DressProducts} onAdd={onAdd} onRemove={onRemove} />
+           <Footer/>
 
          </Route>
 
          <Route path='/cart'>
            <Cart cartItems={cartItems} onAdd={onAdd} onRemove={onRemove} onDelete={onDelete}/>
+           
 
          </Route>
          <Route path='/cosmetics'>
            <Cosmetics cosmeticProducts={cosmeticProducts} onAdd={onAdd} onRemove={onRemove}/>
+           <Footer/>
+
 
          </Route>
 
 
     </Switch>
     </Router>
-    <Footer/>
+    
     
 
 

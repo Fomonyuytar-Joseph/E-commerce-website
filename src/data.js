@@ -267,6 +267,10 @@ const data ={
         { image:foundation ,title:"vivo x7 Pro" ,  price:100000,id:10},
         { image:cream ,title:"vivo x7 Pro" ,  price:100000,id:11},
         { image:paf ,title:"vivo x7 Pro" ,  price:100000 ,id:12},
+    ],
+    colors:[
+        {primary:'#14315c'},
+        {primary:'#14315c'},
     ]
 
 

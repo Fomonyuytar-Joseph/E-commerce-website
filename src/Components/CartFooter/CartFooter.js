@@ -2,7 +2,7 @@ import React from 'react'
 
 function CartFooter() {
   return (
-    <div className="main-footer ">
+    <div className="main-footer myfooter">
     <div className="container">
       
       <div className="row">

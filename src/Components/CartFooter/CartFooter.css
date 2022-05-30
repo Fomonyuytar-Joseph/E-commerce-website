@@ -6,3 +6,10 @@
     bottom: 0;
     width: 100%;
   }
+
+   .myfooter{
+    position: fixed;
+    height: 100px;
+    bottom: 0;
+    width: 100%;
+  }

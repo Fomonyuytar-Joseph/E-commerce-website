@@ -20,7 +20,7 @@ import CartFooter from './Components/CartFooter/CartFooter';
 
 
 function App() {
-  const { DressProducts, GameProducts ,TvProducts ,phoneProducts ,rainProducts ,shoeProducts , movieProducts ,schoolProducts ,kitchenProducts ,cosmeticProducts}= data
+  const { DressProducts, GameProducts ,TvProducts ,phoneProducts ,rainProducts ,shoeProducts , movieProducts ,schoolProducts ,kitchenProducts ,cosmeticProducts ,colors}= data
   const [cartItems, setCartItems] = useState([]);
 
   const onAdd = (product) => {
@@ -57,7 +57,7 @@ function App() {
     <>
     <Router>
 
-    <Navbar cartItems={cartItems}/>
+    <Navbar cartItems={cartItems} colors={colors}/>
     
     <Switch>
     <Route exact path='/'>

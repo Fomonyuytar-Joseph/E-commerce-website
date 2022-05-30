@@ -270,7 +270,7 @@ const data ={
     ],
     colors:[
         {primary:'#14315c'},
-        {secondary:'#14315c'},
+        {secondary:'#ee502c'},
         {text:'white'},
     ]
 

@@ -28,7 +28,7 @@ function Cart({cartItems ,onAdd ,onRemove ,onDelete}) {
           <div class="card" key={item.id}>
           <div class="row border-top border-bottom">
                            <div class="row main align-items-center">
-                               <div class="col-2"><img class="img-fluid rounded-start height-auto pt-5 cartImage" src={item.image}/></div>
+                               <div class="col-2"><img class="img-fluid rounded-start height-auto pt-5 cartImage" src={item.image} alt=''/></div>
                                <div class="col-2">
                                    
                                    <div class="row">{item.title}</div>
@@ -36,7 +36,7 @@ function Cart({cartItems ,onAdd ,onRemove ,onDelete}) {
                                <div class="col-2">
             <button className='qtyBtn'onClick={() => onRemove(item)}>-</button>{item.qty}<button className='qtyBtn' onClick={() => onAdd(item)}>+</button>
                                </div>
-                               <div class="col">{item.qty} x ${item.price.toFixed(2)} </div>
+                               <div class="col">{item.qty} x {item.price.toLocaleString('en-US')}  FCFA</div>
                                <div className='col '><button className='qtyBtn' onClick={() => onDelete(item)} >x</button></div>
                            </div>
                        </div>
@@ -49,11 +49,13 @@ function Cart({cartItems ,onAdd ,onRemove ,onDelete}) {
     
     {cartItems.length !== 0 && (
       <>
-       <div class="row total" >
-                        <div class="col">TOTAL PRICE</div>
-                        <div class="col text-right">{Total}</div>
+       <div class="d-flex justify-content-around total" >
+                        <div class="">TOTAL PRICE</div>
+                        <div class=" text-right">{Total.toLocaleString('en-US')} FCFA</div>
+                        <div> <button className='checkoutbtn'> Checkout
+</button></div>
                     </div>
-                    <button class="btn">CHECKOUT</button>
+                    
                 
       </>
     )}

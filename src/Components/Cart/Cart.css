@@ -13,15 +13,39 @@
         padding: 10px;
         margin-right: 10px;
         margin-left: 10px;
-        background-color: black;
+        background-color: #ee502c;
+        border:none;
         color:#ffff
   
 
   
 }
 .total{
-    border-top: 1px solid rgba(0,0,0,.1);
-    padding: 2vh 0;
+   align-items: center;
+   margin-top: 40px;
 
 
 }
+/* From uiverse.io by @adamgiebl */
+.checkoutbtn {
+ position: relative;
+ padding: 10px 40px;
+ margin: 10px 10px 10px 10px;
+ float: left;
+ border-radius: 3px;
+ font-size: 20px;
+ color: #FFF;
+ text-decoration: none;
+ background-color: #ee502c;
+ border: none;
+
+ 
+ 
+ /* transition: all 0.1s; */
+}
+/* 
+.checkoutbtn:hover, .checkoutbtn:active {
+ 
+ transform: translate(0px,5px);
+ border-bottom: 1px solid #2ecc71;
+} */

@@ -17,7 +17,7 @@ function Checkout({Total}) {
         </div>
         <div class="input-text">
             <input type="text"  placeholder="0000 0000 0000 0000" data-slots="0" data-accept="\d" />
-            <span>Card Details</span>
+            <span>Card Detail</span>
         </div>
        
         

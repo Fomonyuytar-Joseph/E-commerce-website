@@ -17,11 +17,13 @@ import { useState } from 'react'
 import Cart from './Components/Cart/Cart';
 import Cosmetics from './Components/Pages/Cosmetics';
 import CartFooter from './Components/CartFooter/CartFooter';
+import Checkout from './Components/Checkout/Checkout';
 
 
 function App() {
   const { DressProducts, GameProducts ,TvProducts ,phoneProducts ,rainProducts ,shoeProducts , movieProducts ,schoolProducts ,kitchenProducts ,cosmeticProducts ,colors}= data
   const [cartItems, setCartItems] = useState([]);
+  var Total =  cartItems.reduce((a, c) => a + c.qty * c.price, 0);
 
   const onAdd = (product) => {
     const exist = cartItems.find((x) => x.id === product.id);
@@ -128,7 +130,13 @@ function App() {
 
 
          </Route>
+             
+         <Route path='/Checkout'>
+           <Checkout Total={Total}/>
+          
 
+
+         </Route>
 
     </Switch>
     </Router>

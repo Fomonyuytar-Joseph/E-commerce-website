@@ -61,72 +61,92 @@ function App() {
     <>
     <Router>
 
-    <Navbar cartItems={cartItems} colors={colors}/>
+    
     
     <Switch>
     <Route exact path='/'>
+           <Signup/>
+          
+
+
+         </Route>
+
+
+         
+    <Route  path='/homepage'>
+    <Navbar cartItems={cartItems} colors={colors}/>
     <Slider/>
     <Cards/>
     <Footer/>
 
          </Route>
 
-
+         <Navbar cartItems={cartItems} colors={colors}/>
          <Route  path='/shoes'>
            <Shoes shoeProducts={shoeProducts} onAdd={onAdd} onRemove={onRemove}/>
            <Footer/>
 
          </Route>
          <Route path='/phones'>
+         <Navbar cartItems={cartItems} colors={colors}/>
            <Phone phoneProducts={phoneProducts} onAdd={onAdd} onRemove={onRemove} />
            <Footer/>
 
          </Route>
          <Route path='/rain'>
+         <Navbar cartItems={cartItems} colors={colors}/>
            <Rain rainProducts={rainProducts} onAdd={onAdd} onRemove={onRemove} />
            <Footer/>
 
          </Route>
          <Route path='/games'>
+         <Navbar cartItems={cartItems} colors={colors}/>
            <Games GameProducts={GameProducts} onAdd={onAdd} onRemove={onRemove}/>
            <Footer/>
 
          </Route>
          <Route path='/tv'>
+         <Navbar cartItems={cartItems} colors={colors}/>
            <Tv TvProducts={TvProducts} onAdd={onAdd} onRemove={onRemove} />
            <Footer/>
 
          </Route>
          <Route path='/kitchen'>
+         <Navbar cartItems={cartItems} colors={colors}/>
            <Kitchen kitchenProducts={kitchenProducts} onAdd={onAdd} onRemove={onRemove}/>
            <Footer/>
 
          </Route>
          <Route path='/movies'>
+         <Navbar cartItems={cartItems} colors={colors}/>
            <Movie movieProducts={movieProducts} onAdd={onAdd} onRemove={onRemove}/>
            <Footer/>
 
          </Route>
 
          <Route path='/school'>
+         <Navbar cartItems={cartItems} colors={colors}/>
            <School schoolProducts={schoolProducts} onAdd={onAdd} onRemove={onRemove}/>
            <Footer/>
 
          </Route>
          
          <Route path='/dresses'>
+         <Navbar cartItems={cartItems} colors={colors}/>
            <Dress DressProducts={DressProducts} onAdd={onAdd} onRemove={onRemove} />
            <Footer/>
 
          </Route>
 
          <Route path='/cart'>
+         <Navbar cartItems={cartItems} colors={colors}/>
            <Cart cartItems={cartItems} onAdd={onAdd} onRemove={onRemove} onDelete={onDelete}/>
            <CartFooter/>
            
 
          </Route>
          <Route path='/cosmetics'>
+         <Navbar cartItems={cartItems} colors={colors}/>
            <Cosmetics cosmeticProducts={cosmeticProducts} onAdd={onAdd} onRemove={onRemove}/>
            <Footer/>
 
@@ -139,12 +159,7 @@ function App() {
 
 
          </Route>
-         <Route path='/Signup'>
-           <Signup/>
-          
-
-
-         </Route>
+         
          <Route path='/Login'>
            <Login/>
           

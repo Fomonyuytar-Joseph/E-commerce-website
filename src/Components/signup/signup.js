@@ -51,11 +51,11 @@ function Signup() {
         </div>
         <div className="d-grid">
           <button type="submit" className="btn btn-primary" style={{backgroundColor:'#ee502c' ,border:'none'}}>
-            Sign Up
+          <Link to='/homepage'style={{textDecoration:'none' ,color:'white'}}>Sign Up</Link>  
           </button>
         </div>
         <p className="forgot-password text-right mt-2">
-          Already registered ?<Link to="/Signup" style={{textDecoration:'none'}} >
+          Already registered ?<Link to="/Login" style={{textDecoration:'none'}} >
           <span style={{color:'#ee502c'}}>  SignUp</span>
           </Link>
         </p>

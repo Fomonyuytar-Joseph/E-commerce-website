@@ -24,7 +24,7 @@ function Navbar({cartItems }) {
     
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-        <Link to="/" style={{textDecoration:'none',color:'white'}}>
+        <Link to="/homepage" style={{textDecoration:'none',color:'white'}}>
          <span className=' nav-link' style={{color:'white'}} > Home</span>
           </Link>
         </li>

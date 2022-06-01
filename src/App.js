@@ -25,6 +25,13 @@ import Login from './Components/Login/Login';
 function App() {
   const { DressProducts, GameProducts ,TvProducts ,phoneProducts ,rainProducts ,shoeProducts , movieProducts ,schoolProducts ,kitchenProducts ,cosmeticProducts ,colors}= data
   const [cartItems, setCartItems] = useState([]);
+  const [values ,setValues]=useState({
+    Fname:'',
+    Lname:'',
+    email:'',
+    password:'',
+    Cpassword:''
+  })
   var Total =  cartItems.reduce((a, c) => a + c.qty * c.price, 0);
 
   const onAdd = (product) => {
@@ -65,7 +72,7 @@ function App() {
     
     <Switch>
     <Route exact path='/'>
-           <Signup/>
+           <Signup values={values}/>
           
 
 

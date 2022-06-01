@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 
 
-function Signup() {
+function Signup({values}) {
   return (
     <div style={{backgroundColor:'#14315c',height:'100vh'} }>
   <div className='d-flex justify-content-center align-items-center ' style={{paddingTop:'60px'}}>

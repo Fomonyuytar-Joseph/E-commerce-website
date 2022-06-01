@@ -18,7 +18,7 @@ import Cart from './Components/Cart/Cart';
 import Cosmetics from './Components/Pages/Cosmetics';
 import CartFooter from './Components/CartFooter/CartFooter';
 import Checkout from './Components/Checkout/Checkout';
-import Signup from './Components/Signup/signup';
+import Signup from './Components/Signup/Signup';
 
 
 function App() {

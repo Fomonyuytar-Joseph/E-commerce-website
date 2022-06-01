@@ -3,8 +3,8 @@ import './Signup.css'
 
 function Signup() {
   return (
-  
-      <form>
+  <div className='d-flex justify-content-center align-items-center ' style={{marginTop:'200px'}}>
+      <form style={{width:'30%'}}>
         <h3>Sign Up</h3>
         <div className="mb-3">
           <label>First name</label>
@@ -43,7 +43,7 @@ function Signup() {
           Already registered <a href="/sign-in">sign in?</a>
         </p>
       </form>
-      
+      </div> 
 
   )
 }

@@ -42,8 +42,10 @@ function Navbar({cartItems }) {
         
        
         
-        <li class="nav-item">
-          <a class="nav-link" href="yu"><span style={{color:'#ee502c'}}><FontAwesomeIcon icon={faUser}/></span><span style={{color:'white'}}>Login/SignUp</span></a>
+        <li class="nav-item nav-link">
+        <Link to="/Signup" style={{textDecoration:'none'}} >
+          <span style={{color:'#ee502c'}}><FontAwesomeIcon icon={faUser}/></span><span style={{color:'white'}}>SignUp</span>
+          </Link>
         </li>
 
         

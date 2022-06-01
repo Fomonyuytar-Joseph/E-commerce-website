@@ -4,7 +4,7 @@ function Login() {
   return (
     <div className='d-flex justify-content-center align-items-center ' style={{marginTop:'150px'}}>
       <form style={{width:'30%'}}>
-        <h3 style={{paddingBottom:'25px'}}>Sign Up</h3>
+        <h3 style={{paddingBottom:'25px'}}>Login</h3>
         <div className="mb-3">
           <label>First name</label>
           <input

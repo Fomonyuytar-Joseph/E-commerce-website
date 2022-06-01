@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 
 
-function Signup({values}) {
+function Signup() {
   return (
     <div style={{backgroundColor:'#14315c',height:'100vh'} }>
   <div className='d-flex justify-content-center align-items-center ' style={{paddingTop:'60px'}}>
@@ -17,7 +17,7 @@ function Signup({values}) {
             className="form-control"
             placeholder="First name"
             style={{borderColor:'#dee2e7' ,fontSize:'15px',height:'50px'}}
-            name='Fname'
+            
 
           />
         </div>
@@ -28,6 +28,7 @@ function Signup({values}) {
            placeholder="Last name" 
            style={{borderColor:'#dee2e7',fontSize:'15px',height:'50px'}}
            name='Lname'
+           
            />
         </div>
         <div className="mb-3">
@@ -38,6 +39,7 @@ function Signup({values}) {
             placeholder="Enter email"
             style={{borderColor:'#dee2e7',fontSize:'15px',height:'50px'}}
             name='email'
+            
           />
         </div>
         <div className="mb-3">
@@ -48,6 +50,7 @@ function Signup({values}) {
             placeholder="Enter password"
             style={{borderColor:'#dee2e7',fontSize:'15px',height:'50px' }}
             name='password'
+           
             
           />
         </div>
@@ -59,6 +62,7 @@ function Signup({values}) {
             placeholder="Confirm password"
             style={{borderColor:'#dee2e7',fontSize:'15px' ,height:'50px'}}
             name='Cpassword'
+           
           />
         </div>
         <div className="d-grid">

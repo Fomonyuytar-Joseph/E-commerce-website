@@ -19,6 +19,7 @@ import Cosmetics from './Components/Pages/Cosmetics';
 import CartFooter from './Components/CartFooter/CartFooter';
 import Checkout from './Components/Checkout/Checkout';
 import Signup from './Components/Signup/Signup';
+import Login from './Components/Login/Login';
 
 
 function App() {
@@ -140,6 +141,12 @@ function App() {
          </Route>
          <Route path='/Signup'>
            <Signup/>
+          
+
+
+         </Route>
+         <Route path='/Login'>
+           <Login/>
           
 
 

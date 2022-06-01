@@ -1,24 +1,14 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+
 
 function Login() {
   return (
     <div className='d-flex justify-content-center align-items-center ' style={{marginTop:'150px'}}>
       <form style={{width:'30%'}}>
         <h3 style={{paddingBottom:'25px'}}>Login</h3>
-        <div className="mb-3">
-          <label>First name</label>
-          <input
-            type="text"
-            className="form-control"
-            placeholder="First name"
-            style={{borderColor:'#dee2e7' ,fontSize:'15px',height:'50px'}}
-
-          />
-        </div>
-        <div className="mb-3">
-          <label>Last name</label>
-          <input type="text" className="form-control" placeholder="Last name" style={{borderColor:'#dee2e7',fontSize:'15px',height:'50px'}}/>
-        </div>
+        
+        
         <div className="mb-3">
           <label>Email address</label>
           <input
@@ -37,15 +27,7 @@ function Login() {
             style={{borderColor:'#dee2e7',fontSize:'15px',height:'50px' }}
           />
         </div>
-        <div className="mb-3">
-          <label> Confirm Password</label>
-          <input
-            type="password"
-            className="form-control"
-            placeholder="Confirm password"
-            style={{borderColor:'#dee2e7',fontSize:'15px' ,height:'50px'}}
-          />
-        </div>
+        
         <div className="d-grid">
           <button type="submit" className="btn btn-primary" style={{backgroundColor:'#ee502c' ,border:'none'}}>
             Sign Up

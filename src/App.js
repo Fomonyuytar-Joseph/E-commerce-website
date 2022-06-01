@@ -81,8 +81,9 @@ function App() {
 
          </Route>
 
-         <Navbar cartItems={cartItems} colors={colors}/>
+        
          <Route  path='/shoes'>
+         <Navbar cartItems={cartItems} colors={colors}/>
            <Shoes shoeProducts={shoeProducts} onAdd={onAdd} onRemove={onRemove}/>
            <Footer/>
 
@@ -155,12 +156,13 @@ function App() {
              
          <Route path='/Checkout'>
            <Checkout Total={Total}/>
+         
           
 
 
          </Route>
          
-         <Route path='/Login'>
+         <Route path='/login'>
            <Login/>
           
 

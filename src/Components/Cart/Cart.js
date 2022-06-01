@@ -22,7 +22,7 @@ function Cart({cartItems ,onAdd ,onRemove ,onDelete}) {
 
 
 
-    {cartItems.length === 0 && <div style={{marginTop:'20px'}}>Cart is empty</div>}
+    {cartItems.length === 0 && <div style={{marginTop:'90px'}}>Cart is empty</div>}
     {
         cartItems.map((item)=>(
           <div class="card" key={item.id} style={{width:'100vw'}}>

@@ -3,7 +3,7 @@ import React from 'react'
 
 
 function Dress( {DressProducts , onAdd }) {
- 
+ console.log('hi')
   
   return (
     <div class="d-flex justify-content-around flex-wrap mt-7 " style={{ paddingTop:'100px'}} >

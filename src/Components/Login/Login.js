@@ -3,9 +3,11 @@ import { Link } from 'react-router-dom'
 
 
 function Login() {
-  return (
-    <div className='d-flex justify-content-center align-items-center ' style={{marginTop:'150px'}}>
-      <form style={{width:'30%'}}>
+    console.log('ji');
+  return (<div style={{backgroundColor:'#14315c',height:'100vh'} }>
+    <div className='d-flex justify-content-center align-items-center '  style={{paddingTop:'160px'}}>
+      <form style={{width:'30%', padding:'30px', borderRadius:'10px',background:'white'}}>
+      <div style={{display:'flex',alignItem:'center' ,justifyContent:'center'}}>  <p style={{fontSize:'30px' ,fontWeight:'bold'}}>SHOPIFY</p> </div> 
         <h3 style={{paddingBottom:'25px'}}>Login</h3>
         
         
@@ -40,6 +42,7 @@ function Login() {
         </p>
       </form>
       </div> 
+      </div>
 
   )
 }

@@ -18,6 +18,7 @@ import Cart from './Components/Cart/Cart';
 import Cosmetics from './Components/Pages/Cosmetics';
 import CartFooter from './Components/CartFooter/CartFooter';
 import Checkout from './Components/Checkout/Checkout';
+import Signup from './Components/Signup/signup';
 
 
 function App() {
@@ -133,6 +134,12 @@ function App() {
              
          <Route path='/Checkout'>
            <Checkout Total={Total}/>
+          
+
+
+         </Route>
+         <Route path='/Signup'>
+           <Signup/>
           
 
 

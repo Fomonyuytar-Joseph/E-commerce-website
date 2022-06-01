@@ -1,6 +1,7 @@
 import React from 'react'
+import './Signup.css'
 
-function signup() {
+function Signup() {
   return (
   
       <form>
@@ -47,4 +48,4 @@ function signup() {
   )
 }
 
-export default signup
+export default Signup

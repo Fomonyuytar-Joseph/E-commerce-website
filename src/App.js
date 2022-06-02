@@ -25,8 +25,21 @@ import Login from './Components/Login/Login';
 function App() {
   const { DressProducts, GameProducts ,TvProducts ,phoneProducts ,rainProducts ,shoeProducts , movieProducts ,schoolProducts ,kitchenProducts ,cosmeticProducts ,colors}= data
   const [cartItems, setCartItems] = useState([]);
+//Sign States
+  const [firstName,setfirstName]=useState('');
+  const [lastName,setlastName]=useState('');
+  const [email,setEmail]=useState('');
+  const [password,setPassword]=useState('');
+  const [Cpassword,setCpassword]=useState('');
 
-  const [firstName,setUsername]
+
+  const displayInfo=(e)=>{
+    console.log(firstName + lastName)
+    e.preventDefault()
+  }
+
+
+  
 
 
 
@@ -76,8 +89,21 @@ function App() {
     
     
     <Switch>
-    <Route exact path='/'>
-           <Signup />
+    <Route exact path='/signup'>
+           <Signup firstName={firstName} 
+           lastName={lastName} 
+           password={password} 
+           Cpassword={Cpassword}
+            email={email}
+            setfirstName={setfirstName}
+            setlastName={setlastName}
+            setEmail={setEmail}
+            setPassword={setPassword}
+            setCpassword={setCpassword}
+            displayInfo={displayInfo}
+            />
+            
+            
           
 
 
@@ -96,7 +122,7 @@ function App() {
         
          <Route  path='/shoes'>
          <Navbar cartItems={cartItems} colors={colors}/>
-           <Shoes shoeProducts={shoeProducts} onAdd={onAdd} onRemove={onRemove}/>
+           <Shoes shoeProducts={shoeProducts} onAdd={onAdd} onRemove={onRemove} />
            <Footer/>
 
          </Route>

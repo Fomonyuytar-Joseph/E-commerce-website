@@ -3,7 +3,11 @@ import { Link } from 'react-router-dom'
 
 
 
-function Signup() {
+            
+            
+            function Signup({setfirstName,setlastName,setEmail,setPassword,setCpassword,displayInfo}) {
+              
+              
   return (
     <div style={{backgroundColor:'#14315c',height:'100vh'} }>
   <div className='d-flex justify-content-center align-items-center ' style={{paddingTop:'60px'}}>
@@ -11,26 +15,41 @@ function Signup() {
      <div style={{display:'flex',alignItem:'center' ,justifyContent:'center'}}>  <p style={{fontSize:'30px' ,fontWeight:'bold'}}>SHOPIFY</p> </div> 
         <h3 style={{paddingBottom:'25px'}}>Sign Up</h3>
         <div className="mb-3">
+          {/* First Name */}
           <label>First name</label>
           <input
             type="text"
             className="form-control"
             placeholder="First name"
             style={{borderColor:'#dee2e7' ,fontSize:'15px',height:'50px'}}
+            onChange={(event)=>{
+              setfirstName(event.target.value)
+
+            }}
+            
             
 
           />
         </div>
+
+        {/* Last name */}
         <div className="mb-3">
           <label>Last name</label>
           <input type="text" 
           className="form-control"
            placeholder="Last name" 
            style={{borderColor:'#dee2e7',fontSize:'15px',height:'50px'}}
-           name='Lname'
+          //  name='Lname'
+           onChange={(event)=>{
+            setlastName(event.target.value)
+
+          }}
            
            />
         </div>
+
+
+        {/* email */}
         <div className="mb-3">
           <label>Email address</label>
           <input
@@ -38,10 +57,17 @@ function Signup() {
             className="form-control"
             placeholder="Enter email"
             style={{borderColor:'#dee2e7',fontSize:'15px',height:'50px'}}
-            name='email'
+            // name='email'
+            onChange={(event)=>{
+              setEmail(event.target.value)
+
+            }}
             
           />
         </div>
+
+
+        {/* Password */}
         <div className="mb-3">
           <label>Password</label>
           <input
@@ -49,11 +75,18 @@ function Signup() {
             className="form-control"
             placeholder="Enter password"
             style={{borderColor:'#dee2e7',fontSize:'15px',height:'50px' }}
-            name='password'
+            // name='password'
+            onChange={(event)=>{
+              setPassword(event.target.value)
+
+            }}
            
             
           />
         </div>
+
+
+        {/* Confirm Password */}
         <div className="mb-3">
           <label> Confirm Password</label>
           <input
@@ -61,20 +94,27 @@ function Signup() {
             className="form-control"
             placeholder="Confirm password"
             style={{borderColor:'#dee2e7',fontSize:'15px' ,height:'50px'}}
-            name='Cpassword'
+            // name='Cpassword'
+            onChange={(event)=>{
+              setCpassword(event.target.value)
+
+            }}
+           
            
           />
+
         </div>
         <div className="d-grid">
           
           <Link to='/homepage'style={{textDecoration:'none' ,color:'white'}}>
-          <button type="submit" className="btn btn-primary" style={{backgroundColor:'#ee502c' ,border:'none'}}>
+          <button  className="btn btn-primary" style={{backgroundColor:'#ee502c' ,border:'none'}} onClick={displayInfo}>
             Sign Up
-            </button></Link>  
+            </button>          
+            </Link>  
          
         </div>
         <p className="forgot-password text-right mt-2">
-          Already registered ?<Link to="/login" style={{textDecoration:'none'}} >
+        Already registered ?<Link to="/login" style={{textDecoration:'none'}} >
           <span style={{color:'#ee502c'}}>  Login</span>
           </Link>
         </p>

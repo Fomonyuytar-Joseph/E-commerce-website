@@ -36,7 +36,7 @@ function Login() {
           </button>
         </div>
         <p className="forgot-password text-right mt-2">
-          Already have an account ?<Link to="/" style={{textDecoration:'none'}} >
+          Already have an account ?<Link to="/signup" style={{textDecoration:'none'}} >
           <span style={{color:'#ee502c'}}>  SignUp</span>
           </Link>
         </p>

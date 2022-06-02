@@ -7,7 +7,7 @@ const validation= (firstName ,lastName,email ,password ,Cpassword)=>{
         errors.firstName="Name is required"
     }
 
-    if(lastName===""){
+    if(lastName ===""){
         errors.lastName="Email is required"
     }
     if(!email){

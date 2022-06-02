@@ -3,7 +3,7 @@ const validation= (firstName ,lastName,email ,password ,Cpassword)=>{
 
     let errors={};
 
-    if(firstName===""){
+    if(firstName ===""){
         errors.firstName="Name is required"
     }
 

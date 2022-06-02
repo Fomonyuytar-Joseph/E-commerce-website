@@ -1,11 +1,13 @@
+
 import React from 'react'
 import { Link } from 'react-router-dom'
 
 
 
+
             
             
-            function Signup({setfirstName,setlastName,setEmail,setPassword,setCpassword,displayInfo}) {
+            function Signup({errors, setErrors,setfirstName,setlastName,setEmail,setPassword,setCpassword,displayInfo}) {
               
               
   return (
@@ -27,9 +29,10 @@ import { Link } from 'react-router-dom'
 
             }}
             
-            
+         
 
           />
+          { errors.firstName && <p className='error' style={{color:'red'}}>{errors.fullname} </p>}  
         </div>
 
         {/* Last name */}
@@ -46,6 +49,7 @@ import { Link } from 'react-router-dom'
           }}
            
            />
+           { errors.lastName && <p className='error' style={{color:'red'}} >{errors.lastname} </p>} 
         </div>
 
 
@@ -64,6 +68,7 @@ import { Link } from 'react-router-dom'
             }}
             
           />
+          { errors.email && <p className='error' style={{color:'red'}}>{errors.email} </p>} 
         </div>
 
 
@@ -85,7 +90,7 @@ import { Link } from 'react-router-dom'
           />
         </div>
 
-
+        { errors.password && <p className='error' style={{color:'red'}}>{ errors.password } </p>} 
         {/* Confirm Password */}
         <div className="mb-3">
           <label> Confirm Password</label>
@@ -102,7 +107,7 @@ import { Link } from 'react-router-dom'
            
            
           />
-
+           { errors.Cpassword && <p className='error' style={{color:'red'}}>{ errors.Cpassword } </p>} 
         </div>
         <div className="d-grid">
           

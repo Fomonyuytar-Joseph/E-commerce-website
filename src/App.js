@@ -20,6 +20,7 @@ import CartFooter from './Components/CartFooter/CartFooter';
 import Checkout from './Components/Checkout/Checkout';
 import Signup from './Components/Signup/Signup';
 import Login from './Components/Login/Login';
+import validation from './Components/Validation';
 
 
 function App() {
@@ -33,9 +34,16 @@ function App() {
   const [Cpassword,setCpassword]=useState('');
 
 
+  const [errors ,setErrors]=useState({ });
+  const [DataIsCorrect, setDataIsCorrect] = useState(false)
+
+
   const displayInfo=(e)=>{
     console.log(firstName + lastName)
     e.preventDefault()
+    setErrors(validation(firstName,lastName,email ,password,Cpassword))
+    setDataIsCorrect(true)
+    
   }
 
 
@@ -100,6 +108,8 @@ function App() {
             setEmail={setEmail}
             setPassword={setPassword}
             setCpassword={setCpassword}
+            errors={errors}
+            setErrors={setErrors}
             displayInfo={displayInfo}
             />
             

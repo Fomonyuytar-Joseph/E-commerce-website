@@ -26,7 +26,7 @@ function App() {
   const { DressProducts, GameProducts ,TvProducts ,phoneProducts ,rainProducts ,shoeProducts , movieProducts ,schoolProducts ,kitchenProducts ,cosmeticProducts ,colors}= data
   const [cartItems, setCartItems] = useState([]);
 
-  
+  const [firstName,setUsername]
 
 
 

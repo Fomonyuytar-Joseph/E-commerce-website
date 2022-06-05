@@ -227,7 +227,7 @@ useEffect(()=>{
         
          
          <Route path='/login' element={
-           <Login  password={password}  email={email} />}
+           <Login  setPassword={setPassword} setEmail={setEmail} errors={errors} />}
           
 
 

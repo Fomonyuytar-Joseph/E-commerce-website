@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 
-function Login() {
+function Login({setPassword ,setEmail}) {
    
   return (<div style={{backgroundColor:'#14315c',height:'100vh'} }>
     <div className='d-flex justify-content-center align-items-center '  style={{paddingTop:'160px'}}>
@@ -18,6 +18,10 @@ function Login() {
             className="form-control"
             placeholder="Enter email"
             style={{borderColor:'#dee2e7',fontSize:'15px',height:'50px'}}
+            onChange={(event)=>{
+              setEmail(event.target.value)
+
+            }}
           />
         </div>
         <div className="mb-3">
@@ -27,6 +31,10 @@ function Login() {
             className="form-control"
             placeholder="Enter password"
             style={{borderColor:'#dee2e7',fontSize:'15px',height:'50px' }}
+            onChange={(event)=>{
+              setPassword(event.target.value)
+
+            }}
           />
         </div>
         

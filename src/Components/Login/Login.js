@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 
 function Login() {
-    console.log('ji');
+   
   return (<div style={{backgroundColor:'#14315c',height:'100vh'} }>
     <div className='d-flex justify-content-center align-items-center '  style={{paddingTop:'160px'}}>
       <form style={{width:'30%', padding:'30px', borderRadius:'10px',background:'white'}}>

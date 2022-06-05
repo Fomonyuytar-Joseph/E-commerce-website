@@ -13,7 +13,7 @@ import Movie from './Components/Pages/Movie';
 import School from './Components/Pages/School';
 import Dress from './Components/Pages/Dress'
 import data from './data'
-import { useState } from 'react'
+import { useState ,useEffect } from 'react'
 import Cart from './Components/Cart/Cart';
 import Cosmetics from './Components/Pages/Cosmetics';
 import CartFooter from './Components/CartFooter/CartFooter';
@@ -35,7 +35,7 @@ function App() {
 
 
   const [errors ,setErrors]=useState({ });
-  // const [DataIsCorrect, setDataIsCorrect] = useState(false)
+  const [DataIsCorrect, setDataIsCorrect] = useState(false)
 
   let navigate =useNavigate();
 
@@ -45,12 +45,17 @@ function App() {
     e.preventDefault()
     setErrors(validation(firstName,lastName,email ,password,Cpassword))
     
-            navigate('/homepage') 
-    // setDataIsCorrect(true)
+           
+    setDataIsCorrect(true)
     
   }
 
+useEffect(()=>{
+    if(Object.keys(errors).length === 0){
+      navigate('/homepage') 
 
+    }
+},[errors])
   
 
 
@@ -222,7 +227,7 @@ function App() {
         
          
          <Route path='/login' element={
-           <Login/>}
+           <Login />}
           
 
 

@@ -2,7 +2,7 @@ import Navbar from './Components/Navbar/Navbar'
 import Slider from './Components/Slider/Slider'
 import Cards from './Components/Cards/Cards';
 import Footer from './Components/Footer/Footer';
-import { BrowserRouter as Router ,Switch,  Route } from 'react-router-dom';
+import { BrowserRouter as Router ,Routes,  Route ,useNavigate} from 'react-router-dom';
 import Shoes from './Components/Pages/Shoes';
 import Phone from './Components/Pages/Phone';
 import Rain from './Components/Pages/Rain';
@@ -35,14 +35,18 @@ function App() {
 
 
   const [errors ,setErrors]=useState({ });
-  const [DataIsCorrect, setDataIsCorrect] = useState(false)
+  // const [DataIsCorrect, setDataIsCorrect] = useState(false)
+
+  let navigate =useNavigate();
 
 
   const displayInfo=(e)=>{
     console.log(firstName + lastName)
     e.preventDefault()
     setErrors(validation(firstName,lastName,email ,password,Cpassword))
-    setDataIsCorrect(true)
+    
+            navigate('/homepage') 
+    // setDataIsCorrect(true)
     
   }
 
@@ -92,13 +96,12 @@ function App() {
   return (
    
     <>
-    <Router>
+    
 
     
     
-    <Switch>
-    <Route exact path='/signup'>
-           <Signup firstName={firstName} 
+    <Routes>
+    <Route exact path='/Signup' element={<><Signup firstName={firstName} 
            lastName={lastName} 
            password={password} 
            Cpassword={Cpassword}
@@ -111,114 +114,122 @@ function App() {
             errors={errors}
             setErrors={setErrors}
             displayInfo={displayInfo}
-            />
+            /></>}/>
+          
             
             
           
 
 
-         </Route>
+           
 
 
          
-    <Route  path='/homepage'>
-    <Navbar cartItems={cartItems} colors={colors}/>
+    <Route  path='/homepage' element={<> <Navbar cartItems={cartItems} colors={colors}/>
     <Slider/>
     <Cards/>
-    <Footer/>
+    <Footer/></>}/>
+   
 
-         </Route>
+         
 
         
-         <Route  path='/shoes'>
-         <Navbar cartItems={cartItems} colors={colors}/>
+         <Route  path='/shoes' element={<><Navbar cartItems={cartItems} colors={colors}/>
            <Shoes shoeProducts={shoeProducts} onAdd={onAdd} onRemove={onRemove} />
            <Footer/>
-
-         </Route>
-         <Route path='/phones'>
-         <Navbar cartItems={cartItems} colors={colors}/>
+</>}/>
+         
+        
+         <Route path='/phones' element={<> <Navbar cartItems={cartItems} colors={colors}/>
            <Phone phoneProducts={phoneProducts} onAdd={onAdd} onRemove={onRemove} />
-           <Footer/>
+           <Footer/></>}/>
+        
 
-         </Route>
-         <Route path='/rain'>
-         <Navbar cartItems={cartItems} colors={colors}/>
+         
+         <Route path='/rain' element={<><Navbar cartItems={cartItems} colors={colors}/>
            <Rain rainProducts={rainProducts} onAdd={onAdd} onRemove={onRemove} />
-           <Footer/>
+           <Footer/></>}/>
+         
 
-         </Route>
-         <Route path='/games'>
+         
+         <Route path='/games'
+         element={<>
          <Navbar cartItems={cartItems} colors={colors}/>
            <Games GameProducts={GameProducts} onAdd={onAdd} onRemove={onRemove}/>
            <Footer/>
-
-         </Route>
-         <Route path='/tv'>
-         <Navbar cartItems={cartItems} colors={colors}/>
-           <Tv TvProducts={TvProducts} onAdd={onAdd} onRemove={onRemove} />
-           <Footer/>
-
-         </Route>
-         <Route path='/kitchen'>
-         <Navbar cartItems={cartItems} colors={colors}/>
-           <Kitchen kitchenProducts={kitchenProducts} onAdd={onAdd} onRemove={onRemove}/>
-           <Footer/>
-
-         </Route>
-         <Route path='/movies'>
-         <Navbar cartItems={cartItems} colors={colors}/>
-           <Movie movieProducts={movieProducts} onAdd={onAdd} onRemove={onRemove}/>
-           <Footer/>
-
-         </Route>
-
-         <Route path='/school'>
-         <Navbar cartItems={cartItems} colors={colors}/>
-           <School schoolProducts={schoolProducts} onAdd={onAdd} onRemove={onRemove}/>
-           <Footer/>
-
-         </Route>
+           </>
+         }/>
          
-         <Route path='/dresses'>
-         <Navbar cartItems={cartItems} colors={colors}/>
-           <Dress DressProducts={DressProducts} onAdd={onAdd} onRemove={onRemove} />
-           <Footer/>
+         <Route path='/tv' element={<><Navbar cartItems={cartItems} colors={colors}/><Tv TvProducts={TvProducts} onAdd={onAdd} onRemove={onRemove} /> <Footer/></>}/>
+         
+           
+          
 
-         </Route>
+         
+         <Route path='/kitchen' element={<><Navbar cartItems={cartItems} colors={colors}/>
+           <Kitchen kitchenProducts={kitchenProducts} onAdd={onAdd} onRemove={onRemove}/>
+           <Footer/></>}/>
+         
 
-         <Route path='/cart'>
-         <Navbar cartItems={cartItems} colors={colors}/>
-           <Cart cartItems={cartItems} onAdd={onAdd} onRemove={onRemove} onDelete={onDelete}/>
-           <CartFooter/>
+        
+         <Route path='/movies' element={<><Navbar cartItems={cartItems} colors={colors}/> <Movie movieProducts={movieProducts} onAdd={onAdd} onRemove={onRemove}/> <Footer/></>}/>
+         
+          
+          
+
+        
+
+         <Route path='/school' element={<><Navbar cartItems={cartItems} colors={colors}/><School schoolProducts={schoolProducts} onAdd={onAdd} onRemove={onRemove}/> <Footer/></>}/>
+         
+           
+          
+
+        
+         
+         <Route path='/dresses' element={<><Navbar cartItems={cartItems} colors={colors}/>
+         <Dress DressProducts={DressProducts} onAdd={onAdd} onRemove={onRemove} />
+         <Footer/>
+         </>}/>
+         
+           
            
 
-         </Route>
-         <Route path='/cosmetics'>
-         <Navbar cartItems={cartItems} colors={colors}/>
-           <Cosmetics cosmeticProducts={cosmeticProducts} onAdd={onAdd} onRemove={onRemove}/>
-           <Footer/>
+         
+
+         <Route path='/cart' element={<><Navbar cartItems={cartItems} colors={colors}/><Cart cartItems={cartItems} onAdd={onAdd} onRemove={onRemove} onDelete={onDelete}/><CartFooter/></>}/>
+         
+           
+           
+           
+
+         
+         <Route path='/cosmetics' element={<><Navbar cartItems={cartItems} colors={colors}/>
+         <Cosmetics cosmeticProducts={cosmeticProducts} onAdd={onAdd} onRemove={onRemove}/>
+         <Footer/></>}/>
+         
+           
+           
 
 
-         </Route>
+         
              
-         <Route path='/Checkout'>
-           <Checkout Total={Total}/>
+         <Route path='/Checkout' element={ <Checkout Total={Total}/>}/>
+          
          
           
 
 
-         </Route>
+        
          
-         <Route path='/login'>
-           <Login/>
+         <Route path='/login' element={
+           <Login/>}
           
 
 
-         </Route>
+         />
 
-    </Switch>
-    </Router>
+    </Routes>
+   
     
     
 

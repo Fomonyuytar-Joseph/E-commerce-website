@@ -5,10 +5,12 @@ import { Link } from 'react-router-dom'
 
 
 
+
+
             
             
-            function Signup({errors, setErrors,setfirstName,setlastName,setEmail,setPassword,setCpassword,displayInfo}) {
-              
+            function Signup({firstname ,errors, setErrors,setfirstName,setlastName,setEmail,setPassword,setCpassword,displayInfo}) {
+             
               
   return (
     <div style={{backgroundColor:'#14315c',height:'100vh'} }>
@@ -111,11 +113,11 @@ import { Link } from 'react-router-dom'
         </div>
         <div className="d-grid">
           
-          <Link to='/homepage'style={{textDecoration:'none' ,color:'white'}}>
-          <button  className="btn btn-primary" style={{backgroundColor:'#ee502c' ,border:'none'}} onClick={displayInfo}>
+        
+          <button  className="btn btn-primary" style={{backgroundColor:'#ee502c' ,border:'none'}} onClick={displayInfo} >
             Sign Up
             </button>          
-            </Link>  
+            
          
         </div>
         <p className="forgot-password text-right mt-2">

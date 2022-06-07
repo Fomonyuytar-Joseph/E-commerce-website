@@ -2,7 +2,8 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 
-function Login({setPassword ,setEmail}) {
+function Login({setPassword ,setEmail ,display ,errors}) {
+  
    
   return (<div style={{backgroundColor:'#14315c',height:'100vh'} }>
     <div className='d-flex justify-content-center align-items-center '  style={{paddingTop:'160px'}}>
@@ -23,6 +24,7 @@ function Login({setPassword ,setEmail}) {
 
             }}
           />
+           { errors.email && <p className='error' style={{color:'red'}}>{errors.email} </p>}
         </div>
         <div className="mb-3">
           <label>Password</label>
@@ -36,15 +38,16 @@ function Login({setPassword ,setEmail}) {
 
             }}
           />
+           { errors.password && <p className='error' style={{color:'red'}}>{ errors.password } </p>} 
         </div>
         
         <div className="d-grid">
-          <button type="submit" className="btn btn-primary" style={{backgroundColor:'#ee502c' ,border:'none'}}>
-           <Link to='/homepage'style={{textDecoration:'none' ,color:'white'}}>Sign Up</Link> 
+          <button type="submit" className="btn btn-primary" style={{backgroundColor:'#ee502c' ,border:'none'}} onClick={display}>
+           Login
           </button>
         </div>
         <p className="forgot-password text-right mt-2">
-          Already have an account ?<Link to="/signup" style={{textDecoration:'none'}} >
+          Do not have  an account ?<Link to="/signup" style={{textDecoration:'none'}}  >
           <span style={{color:'#ee502c'}}>  SignUp</span>
           </Link>
         </p>

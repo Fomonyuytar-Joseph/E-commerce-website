@@ -40,7 +40,7 @@ function App() {
   let navigate =useNavigate();
 
 
-  const displayInfo=(e)=>{
+  const onSignUp=(e)=>{
     console.log(firstName + lastName)
     e.preventDefault()
     setErrors(validation(firstName,lastName,email ,password,Cpassword))
@@ -48,6 +48,14 @@ function App() {
            
     setDataIsCorrect(true)
     
+  }
+
+
+  const display =(e)=>{
+    console.log(email , password)
+    e.preventDefault()
+    setErrors(validation(email ,password))
+    console.log(password)
   }
 
 useEffect(()=>{
@@ -118,7 +126,7 @@ useEffect(()=>{
             setCpassword={setCpassword}
             errors={errors}
             setErrors={setErrors}
-            displayInfo={displayInfo}
+            onSignup={onSignUp}
             /></>}/>
           
             
@@ -130,7 +138,7 @@ useEffect(()=>{
 
 
          
-    <Route  path='/homepage' element={<> <Navbar cartItems={cartItems} colors={colors}/>
+    <Route  path='/homepage' element={<> <Navbar cartItems={cartItems} colors={colors} firstName={firstName}/>
     <Slider/>
     <Cards/>
     <Footer/></>}/>
@@ -227,7 +235,7 @@ useEffect(()=>{
         
          
          <Route path='/login' element={
-           <Login  setPassword={setPassword} setEmail={setEmail} errors={errors} />}
+           <Login  setPassword={setPassword} setEmail={setEmail} errors={errors} display={display} />}
           
 
 

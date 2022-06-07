@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom'
 
             
             
-            function Signup({firstname ,errors, setErrors,setfirstName,setlastName,setEmail,setPassword,setCpassword,displayInfo}) {
+            function Signup({firstname ,errors, setErrors,setfirstName,setlastName,setEmail,setPassword,setCpassword,onSignup}) {
              
               
   return (
@@ -114,7 +114,7 @@ import { Link } from 'react-router-dom'
         <div className="d-grid">
           
         
-          <button  className="btn btn-primary" style={{backgroundColor:'#ee502c' ,border:'none'}} onClick={displayInfo} >
+          <button  className="btn btn-primary" style={{backgroundColor:'#ee502c' ,border:'none'}} onClick={onSignup} >
             Sign Up
             </button>          
             

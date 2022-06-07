@@ -5,15 +5,17 @@ import { faShop ,faCartShopping ,faUser} from '@fortawesome/free-solid-svg-icons
 
 import { Link } from 'react-router-dom';
 
-function Navbar({cartItems }) {
+function Navbar({cartItems ,firstName}) {
   // const { colors}= data
+
+  console.log(firstName)
   return (
    <>
      <nav class="navbar fixed-top navbar-expand-lg navbar-dark " style={{backgroundColor:'#14315c'}}>
   <div class="container-fluid" >
     <a class="navbar-brand" href="yu" style={{color:'white'}} >
       <span style={{color:'#ee502c' }}><FontAwesomeIcon icon={faShop} /></span>
-       LEGIT MARKET
+       LEGIT MARKET  {firstName}
        </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -44,7 +46,7 @@ function Navbar({cartItems }) {
         
         <li class="nav-item nav-link">
         <Link  to="/signup" style={{textDecoration:'none'}} >
-          <span style={{color:'#ee502c'}}><FontAwesomeIcon icon={faUser}/></span><span style={{color:'white'}}>SignUp</span>
+          <span style={{color:'#ee502c'}}><FontAwesomeIcon icon={faUser}/></span><span style={{color:'white'}}>SignUp </span>
           </Link>
         </li>
 

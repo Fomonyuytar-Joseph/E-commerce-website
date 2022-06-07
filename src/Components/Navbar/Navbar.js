@@ -4,6 +4,7 @@ import { faShop ,faCartShopping ,faUser} from '@fortawesome/free-solid-svg-icons
 // import data from '../../data';
 
 import { Link } from 'react-router-dom';
+import InitialLogo from '../InitialLogo/InitialLogo';
 
 function Navbar({cartItems ,firstName}) {
   // const { colors}= data
@@ -57,6 +58,10 @@ function Navbar({cartItems ,firstName}) {
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
         <button class="btn btn-outline-success" type="submit" style={{backgroundColor:"#ee502c",color:'white' ,border:'none'}}>Search</button>
       </form>
+
+      <div style={{marginLeft:'20px'}}>
+        <InitialLogo firstName={firstName}/>
+      </div>
     </div>
   </div>
 </nav>

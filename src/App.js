@@ -21,6 +21,7 @@ import Checkout from './Components/Checkout/Checkout';
 import Signup from './Components/Signup/Signup';
 import Login from './Components/Login/Login';
 import validation from './Components/Validation';
+import axios from 'axios';
 
 
 function App() {
@@ -44,9 +45,19 @@ function App() {
     console.log(firstName + lastName)
     e.preventDefault()
     setErrors(validation(firstName,lastName,email ,password,Cpassword))
-    
+    navigate('/homepage')
            
     setDataIsCorrect(true)
+
+    axios.post("http://localhost:3001/signup/create", {
+      firstName: firstName,
+      lastName: lastName,
+      email: email,
+      password: password,
+     
+    }).then(() => {
+      console.log('sucesss')
+    });
     
   }
 
@@ -56,14 +67,15 @@ function App() {
     e.preventDefault()
     setErrors(validation(email ,password))
     console.log(password)
+     
   }
 
-useEffect(()=>{
-    if(Object.keys(errors).length === 0){
-      navigate('/homepage') 
+// useEffect(()=>{
+//     if(Object.keys(errors).length === 0){
+//       navigate('/homepage') 
 
-    }
-},[errors])
+//     }
+// },[errors])
   
 
 
@@ -153,13 +165,13 @@ useEffect(()=>{
 </>}/>
          
         
-         <Route path='/phones' element={<> <Navbar cartItems={cartItems} colors={colors}/>
+         <Route path='/phones' element={<> <Navbar cartItems={cartItems} colors={colors} firstName={firstName}/>
            <Phone phoneProducts={phoneProducts} onAdd={onAdd} onRemove={onRemove} />
            <Footer/></>}/>
         
 
          
-         <Route path='/rain' element={<><Navbar cartItems={cartItems} colors={colors}/>
+         <Route path='/rain' element={<><Navbar cartItems={cartItems} colors={colors} firstName={firstName}/>
            <Rain rainProducts={rainProducts} onAdd={onAdd} onRemove={onRemove} />
            <Footer/></>}/>
          
@@ -167,39 +179,39 @@ useEffect(()=>{
          
          <Route path='/games'
          element={<>
-         <Navbar cartItems={cartItems} colors={colors}/>
+         <Navbar cartItems={cartItems} colors={colors} firstName={firstName}/>
            <Games GameProducts={GameProducts} onAdd={onAdd} onRemove={onRemove}/>
            <Footer/>
            </>
          }/>
          
-         <Route path='/tv' element={<><Navbar cartItems={cartItems} colors={colors}/><Tv TvProducts={TvProducts} onAdd={onAdd} onRemove={onRemove} /> <Footer/></>}/>
+         <Route path='/tv' element={<><Navbar cartItems={cartItems} colors={colors} firstName={firstName}/><Tv TvProducts={TvProducts} onAdd={onAdd} onRemove={onRemove}  /> <Footer/></>}/>
          
            
           
 
          
-         <Route path='/kitchen' element={<><Navbar cartItems={cartItems} colors={colors}/>
+         <Route path='/kitchen' element={<><Navbar cartItems={cartItems} colors={colors} firstName={firstName}/>
            <Kitchen kitchenProducts={kitchenProducts} onAdd={onAdd} onRemove={onRemove}/>
            <Footer/></>}/>
          
 
         
-         <Route path='/movies' element={<><Navbar cartItems={cartItems} colors={colors}/> <Movie movieProducts={movieProducts} onAdd={onAdd} onRemove={onRemove}/> <Footer/></>}/>
+         <Route path='/movies' element={<><Navbar cartItems={cartItems} colors={colors} firstName={firstName}/> <Movie movieProducts={movieProducts} onAdd={onAdd} onRemove={onRemove}/> <Footer/></>}/>
          
           
           
 
         
 
-         <Route path='/school' element={<><Navbar cartItems={cartItems} colors={colors}/><School schoolProducts={schoolProducts} onAdd={onAdd} onRemove={onRemove}/> <Footer/></>}/>
+         <Route path='/school' element={<><Navbar cartItems={cartItems} colors={colors} firstName={firstName}/><School schoolProducts={schoolProducts} onAdd={onAdd} onRemove={onRemove}/> <Footer/></>}/>
          
            
           
 
         
          
-         <Route path='/dresses' element={<><Navbar cartItems={cartItems} colors={colors}/>
+         <Route path='/dresses' element={<><Navbar cartItems={cartItems} colors={colors} firstName={firstName}/>
          <Dress DressProducts={DressProducts} onAdd={onAdd} onRemove={onRemove} />
          <Footer/>
          </>}/>
@@ -209,14 +221,14 @@ useEffect(()=>{
 
          
 
-         <Route path='/cart' element={<><Navbar cartItems={cartItems} colors={colors}/><Cart cartItems={cartItems} onAdd={onAdd} onRemove={onRemove} onDelete={onDelete}/><CartFooter/></>}/>
+         <Route path='/cart' element={<><Navbar cartItems={cartItems} colors={colors} firstName={firstName}/><Cart cartItems={cartItems} onAdd={onAdd} onRemove={onRemove} onDelete={onDelete}/><CartFooter/></>}/>
          
            
            
            
 
          
-         <Route path='/cosmetics' element={<><Navbar cartItems={cartItems} colors={colors}/>
+         <Route path='/cosmetics' element={<><Navbar cartItems={cartItems} colors={colors} firstName={firstName}/>
          <Cosmetics cosmeticProducts={cosmeticProducts} onAdd={onAdd} onRemove={onRemove}/>
          <Footer/></>}/>
          

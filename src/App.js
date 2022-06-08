@@ -21,7 +21,7 @@ import Checkout from './Components/Checkout/Checkout';
 import Signup from './Components/Signup/Signup';
 import Login from './Components/Login/Login';
 import validation from './Components/Validation';
-import axios from 'axios';
+
 
 
 function App() {
@@ -49,15 +49,6 @@ function App() {
            
     setDataIsCorrect(true)
 
-    axios.post("http://localhost:3001/signup/create", {
-      firstName: firstName,
-      lastName: lastName,
-      email: email,
-      password: password,
-     
-    }).then(() => {
-      console.log('sucesss')
-    });
     
   }
 

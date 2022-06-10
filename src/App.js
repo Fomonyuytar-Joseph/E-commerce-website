@@ -21,6 +21,7 @@ import Checkout from './Components/Checkout/Checkout';
 import Signup from './Components/Signup/Signup';
 import Login from './Components/Login/Login';
 import validation from './Components/Validation';
+import axios from 'axios';
 
 
 
@@ -42,12 +43,27 @@ function App() {
 
 
   const onSignUp=(e)=>{
+    const user={firstName ,lastName , email ,password}
+    console.log(user)
     console.log(firstName + lastName)
     e.preventDefault()
     setErrors(validation(firstName,lastName,email ,password,Cpassword))
     navigate('/homepage')
            
     setDataIsCorrect(true)
+
+    // axios.post(
+    //   "http://localhost/priangan/api/user/login",
+    //   {
+    //     userna: this.state.username,
+    //     password: this.state.password,
+    //   },
+    //   {
+    //     headers: {
+    //       "Content-type": "application/json; charset=UTF-8",
+    //     }
+    //   }
+    // )
 
     
   }
@@ -150,7 +166,7 @@ function App() {
          
 
         
-         <Route  path='/shoes' element={<><Navbar cartItems={cartItems} colors={colors}/>
+         <Route  path='/shoes' element={<><Navbar cartItems={cartItems} colors={colors} firstName={firstName}/>
            <Shoes shoeProducts={shoeProducts} onAdd={onAdd} onRemove={onRemove} />
            <Footer/>
 </>}/>
